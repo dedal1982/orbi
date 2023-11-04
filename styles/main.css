@@ -1,0 +1,228 @@
+.page {
+  max-width: 1920px;
+  width: 100%;
+  font-family: "Mont", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2 {
+  font-family: "TT Firs Neue Trl", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.link {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19.5px;
+}
+.lock {
+  overflow: hidden;
+}
+.title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 66px;
+}
+/*container*/
+.container {
+  width: 100%;
+  padding-left: calc((100% - 1920px) / 2);
+  padding-right: calc((100% - 1920px) / 2);
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: calc((100% - 924px) / 2);
+    padding-right: calc((100% - 924px) / 2);
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    padding-left: calc((100% - 280px) / 2);
+    padding-right: calc((100% - 280px) / 2);
+  }
+}
+/*header*/
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 0 0 40px 40px;
+}
+.navigation {
+  max-width: 1420px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin: 50px auto 0;
+}
+.logo {
+  width: 102px;
+  height: 21px;
+}
+.navigation__list {
+  display: flex;
+  gap: 20px;
+}
+.navigation__menu {
+  color: #ffffff;
+  transition: all 0.5s ease-out;
+}
+.navigation__menu:hover {
+  color: #ed1c3b;
+}
+.navigation__menu svg {
+  fill: white;
+}
+.navigation__menu:hover svg {
+  fill: #ed1c3b;
+}
+.menu-box {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.navigation__list {
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.5s ease-out;
+}
+.navigation__list:hover {
+  color: #51a8c3;
+}
+.navigation__contacts {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+.navigation__phone {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: #ffffff;
+}
+.navigation__social {
+  display: flex;
+  gap: 15px;
+}
+.navigation__item {
+  display: flex;
+  align-items: center;
+  width: 21px;
+  height: 21px;
+}
+.navigation__item svg {
+  fill: white;
+  fill-opacity: 0.5;
+}
+.navigation__item:hover svg {
+  fill: #51a8c3;
+  fill-opacity: 1;
+}
+.navigation__btns {
+  display: flex;
+  gap: 10px;
+}
+.navigation__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ffffff33;
+  transition: all 0.5s ease-out;
+}
+.navigation__search:hover {
+  border: 1px solid #51a8c3;
+}
+.navigation-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 41px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.8px;
+  transition: all 0.5s ease-out;
+}
+.navigation__partner {
+  width: 175px;
+  height: 40px;
+  border: 1px solid #ed1c3b;
+}
+.navigation__partner:hover {
+  background: #ca1831;
+}
+.navigation__in {
+  width: 140px;
+  height: 40px;
+  background: #ed1c3b;
+}
+.navigation__in:hover {
+  background: #ca1831;
+}
+.header__promo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header__promo-title {
+  max-width: 787px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  margin: 376px auto 480px;
+  text-transform: uppercase;
+}
+.header__img {
+  position: absolute;
+  max-width: 1180px;
+  width: 100%;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  display: flex;
+  justify-content: space-between;
+}
+.header__item-left {
+  max-width: 485px;
+  width: 100%;
+}
+.header__img-left {
+  width: 100%;
+  height: 100%;
+}
+.header__item-right {
+  max-width: 482px;
+  width: 100%;
+}
+.header__img-right {
+  width: 100%;
+  height: 100%;
+}
