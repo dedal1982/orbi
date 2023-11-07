@@ -1028,7 +1028,7 @@ p {
     justify-content: center;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   .aspirations__wrapper {
     gap: 0;
   }
@@ -1059,7 +1059,7 @@ p {
     width: 100%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   .aspirations__image {
     background-image: url(../icons/aspirations3.jpg);
     height: 275px;
@@ -1087,7 +1087,7 @@ p {
     padding: 20px 20px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   .aspirations__inner {
     border-radius: 20px 20px 0 0;
   }
