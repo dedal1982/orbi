@@ -8,6 +8,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./pages/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>orbl</title>
   </head>
   <body>
@@ -400,7 +404,7 @@
             </div>
           </div>
         </section>
-        <!-- <section class="partners">
+        <section class="partners">
           <div class="container">
             <div class="partners__wrapper">
               <div class="services-top">
@@ -414,64 +418,59 @@
                 <ul class="partners__up">
                   <li>
                     <img
-                      class="partners__up-icon"
+                      class="partners__icon-1"
                       src="./icons/up1.jpg"
                       alt="лейбл"
                     />
                   </li>
                   <li>
                     <img
-                      class="partners__up-icon"
+                      class="partners__icon-2"
                       src="./icons/up2.jpg"
                       alt="лейбл"
                     />
                   </li>
                   <li>
                     <img
-                      class="partners__up-icon"
+                      class="partners__icon-3"
                       src="./icons/up3.jpg"
                       alt="лейбл"
                     />
                   </li>
                 </ul>
-                <div class="partners__lower">
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
-
-                  <img src="./icons/low1.jpg" alt="лейбл" />
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./icons/swu.svg" alt="лейбл" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./icons/swu.svg" alt="лейбл" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./icons/swu.svg" alt="лейбл" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./icons/swu.svg" alt="лейбл" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./icons/swu.svg" alt="лейбл" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./icons/swu.svg" alt="лейбл" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./icons/swu.svg" alt="лейбл" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./icons/swu.svg" alt="лейбл" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./icons/swu.svg" alt="лейбл" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./icons/swu.svg" alt="лейбл" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -489,7 +488,9 @@
               </div>
               <div class="aspirations__text-box">
                 <div class="aspirations__inner">
-                  <h2 class="top-title">Наши стремления и убеждения</h2>
+                  <h2 class="top-title aspirations-title">
+                    Наши стремления и убеждения
+                  </h2>
                   <ul class="aspirations__subtitle-box">
                     <li>
                       <p class="aspirations__subtitle">
@@ -542,10 +543,22 @@
               </div>
             </div>
           </div>
-        </section> -->
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
     <script src="./scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
