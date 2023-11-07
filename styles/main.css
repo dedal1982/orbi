@@ -1166,7 +1166,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .aspirations__button {
-    width: 240px;
+    width: 100%;
     height: 50px;
     margin-top: 14px;
   }
