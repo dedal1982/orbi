@@ -992,6 +992,7 @@ p {
 .aspirations {
   width: 100%;
 }
+
 @media screen and (max-width: 1024px) {
   .aspirations-title {
     font-size: 35px;
@@ -1005,43 +1006,91 @@ p {
   }
 }
 .aspirations__wrapper {
-  max-width: 1420px;
-  width: 100%;
+  margin: 198px auto 0;
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  margin: 200px auto 0;
 }
-.aspirations__img-box {
-  width: 600px;
-  height: 600px;
-  border-radius: 20px;
+@media screen and (max-width: 1024px) {
+  .aspirations__wrapper {
+    margin: 156px auto 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .aspirations__wrapper {
+    margin: 68px auto 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aspirations__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .aspirations__wrapper {
+    gap: 0;
+  }
 }
 .aspirations__image {
-  width: 100%;
+  width: 600px;
+  height: 600px;
+  background-image: url(../icons/aspirations.jpg);
+  background-size: cover;
+  background-position: center center;
   border-radius: 20px;
 }
-.aspirations__text-box {
-  max-width: 800px;
-  width: 100%;
-  background: #f8f8fb;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (max-width: 1450px) {
+  .aspirations__image {
+    width: 50%;
+    height: 520px;
+    background-image: url(../icons/aspirations2.jpg);
+    /* height: 296px; */
+  }
+}
+@media screen and (max-width: 1000px) {
+  .aspirations__image {
+    height: 296px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aspirations__image {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .aspirations__image {
+    background-image: url(../icons/aspirations3.jpg);
+    height: 275px;
+    border-radius: 0 0 20px 20px;
+  }
 }
 .aspirations__inner {
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 84px auto;
+  padding: 85px 100px;
+  box-sizing: border-box;
+  background: #f8f8fb;
+  border-radius: 20px;
 }
-.aspirations__subtitle-box {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-top: 26px;
+@media screen and (max-width: 1300px) {
+  .aspirations__inner {
+    padding: 45px 50px;
+    max-width: 484px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .aspirations__inner {
+    padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .aspirations__inner {
+    border-radius: 20px 20px 0 0;
+  }
 }
 .aspirations__subtitle {
   font-weight: 600;
@@ -1063,6 +1112,18 @@ p {
   .aspirations__subtitle {
     font-size: 14px;
     line-height: 17.5px;
+  }
+}
+.aspirations__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 25px;
+}
+@media screen and (max-width: 1450px) {
+  .aspirations__list {
+    margin-top: 10px;
+    gap: 13px;
   }
 }
 /***************************************************inner-button*********************************************/
@@ -1097,4 +1158,16 @@ p {
   width: 370px;
   height: 63px;
   margin-top: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .aspirations__button {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .aspirations__button {
+    width: 240px;
+    height: 50px;
+    margin-top: 14px;
+  }
 }
