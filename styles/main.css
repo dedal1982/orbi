@@ -223,8 +223,8 @@ p {
 
 @media screen and (max-width: 375px) {
   .container {
-    padding-left: calc((100% - 280px) / 2);
-    padding-right: calc((100% - 280px) / 2);
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 /*header*/
