@@ -1479,6 +1479,23 @@ p {
     max-width: 74px;
     transform: translateX(-40px) rotate(346deg);
   }
+  #b-3::after {
+    content: "";
+    position: absolute;
+    left: 247px;
+    top: 14px;
+    max-width: 285px;
+    width: 74px;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      rgba(43, 223, 39, 0) 1.76%,
+      #2bdf27 13.02%,
+      #2bdf27 86.99%,
+      rgba(43, 223, 39, 0) 100%
+    );
+    transform: translateX(-40px) rotate(346deg);
+  }
   #b-6:before {
     top: 83px;
     left: -63px;
