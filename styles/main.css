@@ -1136,6 +1136,20 @@ p {
   flex-direction: column;
   justify-content: space-between;
 }
+.we-work__left-2 {
+  height: 434px;
+  transform: translateY(120px);
+}
+.we-work__left-2 img {
+  bottom: 79px;
+}
+.we-work__left-3 {
+  height: 424px;
+  transform: translateY(67px);
+}
+.we-work__left-3 img {
+  bottom: 118px;
+}
 .we-work__list {
   display: flex;
   flex-direction: column;
