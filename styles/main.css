@@ -2049,19 +2049,20 @@ p {
 .rel-section {
   position: relative;
   top: 170px;
-  max-width: 1140px;
+  max-width: 1420px;
   width: 100%;
   background: linear-gradient(
       180deg,
-      rgba(39, 40, 44, 0.2) 0%,
-      rgba(39, 40, 44, 0.6) 100%
+      rgb(39 40 44 / 8%) 0%,
+      rgb(39 40 44 / 0%) 100%
     ),
     url(../images/rel.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   border-radius: 20px;
-  padding: 92px 120px;
+  padding: 92px 120px 97px;
+  box-sizing: border-box;
 }
 .rel-section__item {
   display: flex;
@@ -2079,4 +2080,102 @@ p {
   width: 100%;
   height: 63px;
   margin-top: 30px;
+}
+/******************************************footer***************************************/
+.footer {
+  width: 100%;
+  background: rgba(36, 37, 41, 1);
+  border-radius: 40px 40px 0 0;
+}
+.footer__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer__grid {
+  margin-top: 345px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  gap: 30px;
+}
+.footer__grid-item {
+  display: flex;
+  align-items: flex-start;
+}
+.footer__grid-item:nth-child(2) {
+  justify-content: space-between;
+}
+.footer__grid-item:nth-child(3) {
+  justify-content: flex-end;
+}
+.footer__grid-item:nth-child(6) {
+  justify-content: center;
+}
+.footer__logo {
+  width: 146px;
+  height: 30px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: #ffffff;
+}
+.footer__icons {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+.footer__icon {
+  display: block;
+}
+.footer__btn-box {
+  display: flex;
+  gap: 40px;
+}
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 153px;
+  height: 42px;
+  background: #ed1c3b;
+  border-radius: 41px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22.1px;
+  color: #ffffff;
+}
+.footer__btn_type {
+  width: 197px;
+  background: transparent;
+  border: 1px solid #ed1c3b;
+}
+.footer__input-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__input {
+  width: 290px;
+  height: 42px;
+  border: 1px solid #ffffff26;
+  border-radius: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #a1a4a7;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.footer__btn-input {
+  width: 290px;
 }
