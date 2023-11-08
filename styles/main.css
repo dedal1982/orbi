@@ -1715,12 +1715,24 @@ p {
 @media screen and (max-width: 767px) {
   .privileges__wrapper {
     margin: 50px auto 0;
+    gap: 20px;
   }
 }
 .privileges__inner {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .privileges__inner {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .privileges__inner {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 .privileges__left {
   max-width: 940px;
@@ -1742,6 +1754,23 @@ p {
     max-width: 563px;
     height: 450px;
     background-size: contain;
+  }
+}
+@media screen and (max-width: 768px) {
+  .privileges__left {
+    background-image: url(../images/priv-bg1024.png);
+    padding: 25px 20px;
+    max-width: 100%;
+    height: 450px;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 400px) {
+  .privileges__left {
+    background-image: url(../images/priv-bg320.png);
+    padding: 22px 20px;
+
+    height: 555px;
   }
 }
 .privileges__text {
@@ -1781,6 +1810,11 @@ p {
     width: 100%;
   }
 }
+@media screen and (max-width: 400px) {
+  .privileges__subtitle {
+    margin-top: 10px;
+  }
+}
 .privileges__button {
   width: 290px;
   height: 63px;
@@ -1790,6 +1824,13 @@ p {
   .privileges__button {
     width: 235px;
     margin-top: 92px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .privileges__button {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
   }
 }
 /******************************privileges__right**************************/
@@ -1805,6 +1846,28 @@ p {
   box-sizing: border-box;
   gap: 55px;
 }
+@media screen and (max-width: 1024px) {
+  .privileges__right {
+    padding: 0;
+    max-width: fit-content;
+    height: 393px;
+    gap: 51px;
+    background: #ffffff;
+  }
+}
+@media screen and (max-width: 768px) {
+  .privileges__right {
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 400px) {
+  .privileges__right {
+    background: #f8f8fb;
+    padding: 29px 20px;
+    gap: 37px;
+    max-width: 100%;
+  }
+}
 .privileges__item {
   display: flex;
   align-items: center;
@@ -1812,7 +1875,18 @@ p {
   width: 100%;
   gap: 25px;
 }
+@media screen and (max-width: 400px) {
+  .privileges__item {
+    gap: 15px;
+  }
+}
 .privileges__icon {
   width: 35px;
   height: 35px;
+}
+@media screen and (max-width: 400px) {
+  .privileges__icon {
+    width: 28px;
+    height: 28px;
+  }
 }
