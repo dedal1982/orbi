@@ -1284,6 +1284,7 @@ p {
   background-image: url(../icons/w-d.png);
   background-repeat: no-repeat;
   transition: all 0.5s ease;
+  position: relative;
 }
 @media screen and (max-width: 1024px) {
   .we-work__box {
@@ -1356,4 +1357,116 @@ p {
   .we-work__list {
     gap: 3px;
   }
+}
+/******************************************/
+#b-1:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -178px;
+  width: 240px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 223, 39, 0) 1.76%,
+    #2bdf27 13.02%,
+    #2bdf27 86.99%,
+    rgba(43, 223, 39, 0) 100%
+  );
+  transform: translateX(-40px) rotate(14deg);
+}
+#b-2:before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 14px;
+  width: 44px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 223, 39, 0) 1.76%,
+    #2bdf27 13.02%,
+    #2bdf27 86.99%,
+    rgba(43, 223, 39, 0) 100%
+  );
+  transform: translateX(-40px) rotate(15deg);
+}
+#b-3:before {
+  content: "";
+  position: absolute;
+  top: 83px;
+  left: 0px;
+  width: 48px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 223, 39, 0) 1.76%,
+    #2bdf27 13.02%,
+    #2bdf27 86.99%,
+    rgba(43, 223, 39, 0) 100%
+  );
+  transform: translateX(-40px) rotate(346deg);
+}
+#b-4:before {
+  content: "";
+  position: absolute;
+  top: 83px;
+  left: 0px;
+  width: 48px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 223, 39, 0) 1.76%,
+    #2bdf27 13.02%,
+    #2bdf27 86.99%,
+    rgba(43, 223, 39, 0) 100%
+  );
+  transform: translateX(-40px) rotate(346deg);
+}
+#b-5:before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 14px;
+  width: 44px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 223, 39, 0) 1.76%,
+    #2bdf27 13.02%,
+    #2bdf27 86.99%,
+    rgba(43, 223, 39, 0) 100%
+  );
+  transform: translateX(-40px) rotate(15deg);
+}
+#b-6:before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 14px;
+  width: 44px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 223, 39, 0) 1.76%,
+    #2bdf27 13.02%,
+    #2bdf27 86.99%,
+    rgba(43, 223, 39, 0) 100%
+  );
+  transform: translateX(-40px) rotate(15deg);
+}
+#b-6::after {
+  content: "";
+  position: absolute;
+  top: -22px;
+  width: 285px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 223, 39, 0) 1.76%,
+    #2bdf27 13.02%,
+    #2bdf27 86.99%,
+    rgba(43, 223, 39, 0) 100%
+  );
+  transform: translateX(-40px) rotate(341deg);
 }
