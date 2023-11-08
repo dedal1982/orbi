@@ -1,5 +1,5 @@
 .page {
-  max-width: 1920px;
+  /* max-width: 1920px; */
   width: 100%;
   font-family: "Mont", sans-serif;
   text-rendering: optimizeLegibility;
@@ -229,7 +229,7 @@ p {
 }
 /*header*/
 .header {
-  max-width: 1920px;
+  /* max-width: 1920px; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1691,4 +1691,111 @@ p {
     font-size: 40px;
     line-height: 50px;
   }
+}
+/**********************************privileges******************************/
+.privileges {
+  width: 100%;
+}
+.privileges__wrapper {
+  margin: 211px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+@media screen and (max-width: 1024px) {
+  .privileges__wrapper {
+    margin: 153px auto 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .privileges__wrapper {
+    margin: 90px auto 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .privileges__wrapper {
+    margin: 50px auto 0;
+  }
+}
+.privileges__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.privileges__left {
+  max-width: 940px;
+  width: 100%;
+  height: 540px;
+  border-radius: 20px;
+  background-image: url(../images/priv-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(248, 248, 251, 1);
+  padding: 83px 100px;
+  box-sizing: border-box;
+}
+.privileges__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 309px;
+  width: 100%;
+}
+.privileges__title {
+  font-weight: 700;
+  color: #191a1b;
+  font-size: 30px;
+  line-height: 37.5px;
+}
+@media screen and (max-width: 1024px) {
+  .privileges__title {
+    font-size: 25px;
+    line-height: 31.25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .privileges__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+.privileges__subtitle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 12px;
+}
+.privileges__button {
+  width: 290px;
+  height: 63px;
+  margin-top: 92px;
+}
+@media screen and (max-width: 1024px) {
+  .privileges__button {
+    width: 235px;
+    margin-top: 92px;
+  }
+}
+/******************************privileges__right**************************/
+.privileges__right {
+  max-width: 460px;
+  width: 100%;
+  height: 540px;
+  border-radius: 20px;
+  background: #f8f8fb;
+  display: flex;
+  flex-direction: column;
+  padding: 62px 70px;
+  box-sizing: border-box;
+  gap: 55px;
+}
+.privileges__item {
+  display: flex;
+  align-items: center;
+  max-width: 320px;
+  width: 100%;
+  gap: 25px;
+}
+.privileges__icon {
+  width: 35px;
+  height: 35px;
 }
