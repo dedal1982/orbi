@@ -1126,6 +1126,7 @@ p {
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
+    gap: 50px;
   }
 }
 .we-work__left {
@@ -1139,6 +1140,8 @@ p {
   .we-work__left {
     gap: 57px;
     max-width: 100%;
+  }
+  .we-work__right {
   }
 }
 /*****************************************we-work__item***********************/
@@ -1267,13 +1270,34 @@ p {
   width: 220px;
   height: 114px;
   background-image: url(../icons/w-d.png);
+  background-repeat: no-repeat;
   transition: all 0.5s ease;
+}
+@media screen and (max-width: 1024px) {
+  .we-work__box {
+    width: 230px;
+    background-size: cover;
+    margin-left: 20px;
+    height: 120px;
+  }
 }
 .we-work__img {
   position: relative;
   bottom: 55px;
   transition: all 0.5s ease;
   z-index: 2;
+}
+@media screen and (max-width: 1024px) {
+  .we-work__img {
+    bottom: 60px;
+    left: 5px;
+  }
+  .we-work__item-2 img {
+    bottom: 82px;
+  }
+  .we-work__item-3 img {
+    bottom: 125px;
+  }
 }
 .we-work__list {
   display: flex;
