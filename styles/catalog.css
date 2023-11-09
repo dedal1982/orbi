@@ -151,3 +151,10 @@
   flex-direction: column;
   gap: 40px;
 }
+.catalog__footer__grid {
+  margin: 0;
+  padding-top: 129px;
+}
+.catalog__footer__wrapper {
+  margin-top: 200px;
+}
