@@ -506,7 +506,7 @@ p {
 }
 @media screen and (max-width: 1150px) {
   .services__left {
-    max-width: 50%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -717,6 +717,7 @@ p {
   .services__right {
     padding: 0 50px;
     box-sizing: border-box;
+    width: 50%;
   }
 }
 .services__right-inner {
