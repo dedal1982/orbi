@@ -1,3 +1,5 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
 @import url(../styles/main.css);
+@import url(../styles/vendor.css);
+@import url(../styles/catalog.css);
