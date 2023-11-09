@@ -2183,7 +2183,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  gap: 77px 30px;
+  row-gap: 50px;
   margin: 343px 0 0 0;
 }
 .footer__grid-item {
@@ -2191,7 +2191,7 @@ p {
   align-items: flex-start;
 }
 .footer__grid-item:nth-child(2) {
-  gap: 100px;
+  gap: 195px;
 }
 .footer__grid-item:nth-child(3) {
   justify-content: flex-end;
