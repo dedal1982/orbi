@@ -7,3 +7,9 @@
 //     header.classList.remove("header__fixed");
 //   }
 // };
+const dropButton = document.getElementById("menu-drop");
+const menuDrop = document.querySelector(".header__menu");
+
+dropButton.addEventListener("click", () => {
+  menuDrop.classList.toggle("active");
+});
