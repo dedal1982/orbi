@@ -1,7 +1,35 @@
 .header-white {
   background: #ffffff;
 }
-
+.white-link {
+  color: #191a1b;
+}
+.white-link svg {
+  fill: #191a1b;
+}
+.white-linkk:hover svg {
+  fill: #ed1c3b;
+}
+.white-phone {
+  color: #191a1b;
+}
+.white-social-icon svg {
+  fill: #a1a4a7;
+  fill-opacity: 0.5;
+}
+.white-social-icon:hover svg {
+  fill: #51a8c3;
+  fill-opacity: 1;
+}
+.white-button-search {
+  border: 1px solid #e3e4e6;
+}
+.white-button-partner {
+  color: #ed1c3b;
+}
+.white-button-partner:hover {
+  color: #ffffff;
+}
 .nav-list-links {
   display: flex;
   gap: 10px;
