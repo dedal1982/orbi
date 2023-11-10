@@ -91,6 +91,7 @@
 .trinity__inner {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 @media screen and (max-width: 1024px) {
   .trinity__inner {
@@ -114,8 +115,7 @@
 @media screen and (max-width: 540px) {
   .trinity__img-box {
     position: inherit;
-    width: 280px;
-    height: 90px;
+    width: 100%;
     top: 0;
   }
 }
