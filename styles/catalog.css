@@ -35,6 +35,11 @@
   justify-content: space-between;
   margin: 100px auto 0;
 }
+@media screen and (max-width: 1024px) {
+  .catalog__wrapper {
+    margin-top: 95px;
+  }
+}
 @media screen and (max-width: 540px) {
   .catalog__wrapper {
     margin-top: 0;
@@ -56,6 +61,7 @@
   .catalog__title {
     font-size: 50px;
     line-height: 60px;
+    margin-top: 36px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -129,10 +135,13 @@
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .catalog__inner-letters {
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 50px;
+    column-gap: 53px;
+    margin-right: 41px;
+    row-gap: 22px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -206,11 +215,16 @@
 .catalog__container-list {
   display: flex;
   gap: 20px;
-  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .catalog__container-list {
+    gap: 12px;
+  }
 }
 @media screen and (max-width: 1023px) {
   .catalog__container-list {
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 5px;
   }
 }
@@ -263,6 +277,23 @@
   height: 20px;
   right: 13px;
   top: 9px;
+}
+@media screen and (max-width: 1024px) {
+  .registry::before {
+    content: url(../icons/cti.svg);
+    width: 22px;
+    height: 22px;
+    right: 41px;
+    top: 12px;
+  }
+  .catalog__discount::after {
+    position: absolute;
+    content: url(../icons/cti2.svg);
+    width: 12px;
+    height: 12px;
+    right: 24px;
+    top: 12px;
+  }
 }
 @media screen and (max-width: 450px) {
   .registry::before {
@@ -319,7 +350,7 @@
 .catalog__wrapper-right {
   max-width: 360px;
   width: 100%;
-  margin-top: 155px;
+  margin-top: 246px;
 }
 @media screen and (max-width: 1300px) {
   .catalog__wrapper-right {
@@ -354,10 +385,15 @@
 }
 .catalog__footer__grid {
   margin: 0;
-  padding-top: 129px;
+  padding-top: 88px;
 }
 .catalog__footer__wrapper {
   margin-top: 200px;
+}
+@media screen and (max-width: 1024px) {
+  .catalog__footer__wrapper {
+    margin-top: 160px;
+  }
 }
 /*****************catalog__hidden****************/
 .catalog__hidden {

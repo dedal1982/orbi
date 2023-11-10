@@ -2487,6 +2487,7 @@ p {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
   box-sizing: border-box;
