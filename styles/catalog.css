@@ -40,9 +40,18 @@
   flex-direction: column;
 }
 .catalog__title {
+  font-size: 55px;
+  line-height: 66px;
   color: #191a1b;
   margin: 29px 0 0 0;
   text-align: start;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1024px) {
+  .catalog__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 .catalog__inner {
   display: flex;
@@ -59,6 +68,13 @@
   border-bottom: 1px solid #e3e4e6;
   padding-bottom: 27px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 1024px) {
+  .catalog__inner-top {
+    margin-top: 34px;
+    max-width: 922px;
+    width: 100%;
+  }
 }
 .catalog__inner-text {
   width: 100%;
@@ -79,6 +95,12 @@
   color: #191a1b;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1024px) {
+  .catalog__inner-letter {
+    font-size: 22px;
+    line-height: 27.5px;
+  }
+}
 .catalog__inner-letters {
   display: flex;
   justify-content: space-between;
@@ -87,10 +109,22 @@
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 1024px) {
+  .catalog__text-item {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
 .catalog__right-subtitle {
   display: flex;
   gap: 10px;
   margin-top: 38px;
+}
+@media screen and (max-width: 1024px) {
+  .catalog__right-subtitle {
+    font-size: 18px;
+    line-height: 22.5px;
+  }
 }
 .catalog__container {
   width: 100%;
@@ -99,10 +133,17 @@
   margin-top: 88px;
   gap: 30px;
 }
+@media screen and (max-width: 1024px) {
+  .catalog__container {
+    margin-top: 60px;
+  }
+}
 .catalog__container-list {
   display: flex;
   gap: 20px;
+  justify-content: space-between;
 }
+
 .catalog__container-item {
   display: flex;
   flex-direction: column;
@@ -145,6 +186,11 @@
   flex-direction: column;
   gap: 89px;
 }
+@media screen and (max-width: 1024px) {
+  .catalog__items-wrapper {
+    gap: 56px;
+  }
+}
 .catalog__top-title {
   margin-bottom: 25px;
 }
@@ -153,6 +199,11 @@
   max-width: 360px;
   width: 100%;
   margin-top: 155px;
+}
+@media screen and (max-width: 1300px) {
+  .catalog__wrapper-right {
+    display: none;
+  }
 }
 .catalog__select-list {
   display: flex;
