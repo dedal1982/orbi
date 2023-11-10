@@ -227,7 +227,11 @@
     height: 68px;
   }
 }
-.catalog__img-item::before {
+/***********************************классы скидка**************************/
+.registry {
+  position: relative;
+}
+.registry::before {
   position: absolute;
   content: url(../icons/cti.svg);
   width: 20px;
@@ -235,7 +239,10 @@
   right: 38px;
   top: 9px;
 }
-.catalog__img-item::after {
+.catalog__discount {
+  position: relative;
+}
+.catalog__discount::after {
   position: absolute;
   content: url(../icons/cti2.svg);
   width: 20px;
@@ -243,6 +250,7 @@
   right: 13px;
   top: 9px;
 }
+/***************************************************************/
 .catalog__img {
   width: 100%;
   height: 100%;

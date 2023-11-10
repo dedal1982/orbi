@@ -1,7 +1,12 @@
 .header-white {
   background: #ffffff;
 }
-
+.burger {
+  fill: white;
+}
+.header-white .burger {
+  fill: rgba(25, 26, 27, 1);
+}
 .white-link {
   color: #191a1b;
 }
