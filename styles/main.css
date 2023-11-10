@@ -227,10 +227,38 @@ p {
     padding-right: 20px;
   }
 }
-
+/**********************************************/
+.hero {
+  position: relative;
+  height: 57vw;
+  color: #fff;
+  border-radius: 0 0 40px 40px;
+}
+.hero__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: inherit;
+}
+.hero__image video {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  border-radius: inherit;
+}
 /*header*/
-.header {
-  /* max-width: 1920px; */
+/* .header {
+ 
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -254,8 +282,13 @@ p {
   .header {
     background-image: url(../images/bg-320.png);
   }
-}
+}*/
 .navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   width: 100%;
   display: flex;
 }
@@ -352,9 +385,10 @@ p {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 44%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -48%);
+  z-index: 5;
 }
 .promo__big-left {
   max-width: 485px;
@@ -400,7 +434,11 @@ p {
   line-height: 66px;
   text-align: center;
   text-transform: uppercase;
-  margin: 376px auto 480px;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 @media screen and (max-width: 1024px) {
   .promo__title {
