@@ -2497,6 +2497,13 @@ p {
   display: flex;
   gap: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .footer__copyright {
+    width: 86%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
 @media screen and (max-width: 1000px) {
   .footer__grid-item:nth-child(1) {
     grid-row: 1/2;

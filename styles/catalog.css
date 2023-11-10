@@ -385,7 +385,7 @@
 }
 .catalog__footer__grid {
   margin: 0;
-  padding-top: 88px;
+  padding-top: 129px;
 }
 .catalog__footer__wrapper {
   margin-top: 200px;
@@ -393,6 +393,10 @@
 @media screen and (max-width: 1024px) {
   .catalog__footer__wrapper {
     margin-top: 160px;
+  }
+  .catalog__footer__grid {
+    padding-top: 88px;
+    row-gap: 78px;
   }
 }
 /*****************catalog__hidden****************/
