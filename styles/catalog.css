@@ -250,6 +250,23 @@
   right: 13px;
   top: 9px;
 }
+@media screen and (max-width: 450px) {
+  .registry::before {
+    content: url(../icons/ctim.svg);
+    width: 12px;
+    height: 12px;
+    right: 22px;
+    top: 7px;
+  }
+  .catalog__discount::after {
+    position: absolute;
+    content: url(../icons/ctim2.svg);
+    width: 12px;
+    height: 12px;
+    right: 7px;
+    top: 7px;
+  }
+}
 /***************************************************************/
 .catalog__img {
   width: 100%;
