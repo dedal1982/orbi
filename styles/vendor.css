@@ -59,7 +59,7 @@
   width: 100%;
 }
 .trinity__wrapper {
-  margin: 95px auto -24px;
+  margin: 95px auto 23px;
   display: flex;
   flex-direction: column;
   gap: 36px;
