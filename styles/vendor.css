@@ -306,6 +306,11 @@
     margin-top: 233px;
   }
   .trinity__footer-wrapper {
-    margin-top: 456px;
+    margin-top: 367px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .trinity__footer-grid {
+    margin-top: 220px;
   }
 }
