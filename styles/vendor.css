@@ -59,7 +59,7 @@
   width: 100%;
 }
 .trinity__wrapper {
-  margin: 95px auto 23px;
+  margin: 95px auto 57px;
   display: flex;
   flex-direction: column;
   gap: 36px;
@@ -152,7 +152,8 @@
 @media screen and (max-width: 1024px) {
   .trinity__news {
     max-width: 100%;
-    margin-top: 94px;
+    margin-top: 73px;
+    gap: 25px;
   }
 }
 @media screen and (max-width: 540px) {
@@ -187,6 +188,11 @@
   margin-top: 25px;
   gap: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .trinity__list {
+    gap: 22px;
+  }
+}
 @media screen and (max-width: 540px) {
   .trinity__list {
     margin-top: 8px;
@@ -196,12 +202,13 @@
 .trinity__news-list {
   display: flex;
   flex-direction: column;
-  gap: 51px;
+  gap: 23px;
 }
 .trinity__news-item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
+  border-bottom: 1px solid #e3e4e6;
 }
 .trinity__news-subtitle {
   font-weight: 600;
@@ -236,7 +243,7 @@
     line-height: 42px;
   }
   .trinity__categories {
-    margin-top: 94px;
+    margin-top: 89px;
   }
 }
 @media screen and (max-width: 540px) {
@@ -251,6 +258,12 @@
   align-items: center;
   padding: 15px 30px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 1024px) {
+  .categories-item {
+    max-width: 452px;
+    width: 100%;
+  }
 }
 .trinity__top-subtitle {
   display: none;
@@ -269,15 +282,10 @@
   }
 }
 
-/* @media screen and (max-width: 1024px) {
-  .trinity__rel-section {
-    top: 233px;
-    padding: 73px 70px;
-  }
-  .triniti__footer__grid {
-    margin: 243px 0 0 0;
-  }
-} */
+/******************trinity__rel-section******************/
+.trinity-rel-section {
+  top: 155px;
+}
 @media screen and (max-width: 540px) {
   .trinity__title {
     font-size: 18px;
@@ -298,7 +306,12 @@
 .trinity__footer-grid {
   margin-top: 342px;
 }
-.trinity__footer-wrapper {
+@media screen and (max-width: 1024px) {
+  .trinity__footer-grid {
+    margin-top: 233px;
+  }
+}
+/* .trinity__footer-wrapper {
   margin-top: 430px;
 }
 @media screen and (max-width: 1024px) {
@@ -308,9 +321,25 @@
   .trinity__footer-wrapper {
     margin-top: 367px;
   }
-}
+} */
 @media screen and (max-width: 767px) {
   .trinity__footer-grid {
     margin-top: 220px;
   }
+}
+/********************************************************/
+.services__right-link {
+  position: relative;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  padding-bottom: 20px;
+}
+.trinity__news-item:hover .services__right-link {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+.trinity__right-link {
+  padding-bottom: 0;
 }
