@@ -70,7 +70,7 @@
 }
 @media screen and (max-width: 1024px) {
   .trinity__wrapper {
-    margin: 95px auto 107px;
+    margin: 95px auto 0;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -269,7 +269,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .trinity__rel-section {
     top: 233px;
     padding: 73px 70px;
@@ -277,7 +277,7 @@
   .triniti__footer__grid {
     margin: 243px 0 0 0;
   }
-}
+} */
 @media screen and (max-width: 540px) {
   .trinity__title {
     font-size: 18px;
@@ -292,5 +292,20 @@
   .trinity-svg {
     width: 20px;
     height: 20px;
+  }
+}
+/**********************trinity__footer__grid******************/
+.trinity__footer-grid {
+  margin-top: 342px;
+}
+.trinity__footer-wrapper {
+  margin-top: 430px;
+}
+@media screen and (max-width: 1024px) {
+  .trinity__footer-grid {
+    margin-top: 233px;
+  }
+  .trinity__footer-wrapper {
+    margin-top: 456px;
   }
 }
