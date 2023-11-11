@@ -2300,6 +2300,7 @@ p {
 @media screen and (max-width: 767px) {
   .footer__grid {
     grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 }
 /* @media screen and (max-width: 1000px) {
@@ -2531,6 +2532,13 @@ p {
   box-sizing: border-box;
   border-top: 1px solid #ffffff1a;
 }
+@media screen and (max-width: 767px) {
+  .footer__info {
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
 .footer__copyright {
   width: 100%;
   display: flex;
@@ -2627,6 +2635,12 @@ p {
 @media screen and (max-width: 767px) {
   .footer__grid-item:nth-of-type(5) .footer__btn-box {
     gap: 13px;
+  }
+  .footer__grid-item:nth-of-type(2) .footer__list {
+    width: 50%;
+  }
+  .footer__grid-item:nth-child(3) {
+    justify-content: flex-start;
   }
 }
 /* @media screen and (max-width: 1024px) {
