@@ -578,6 +578,11 @@ p {
     align-items: inherit;
   }
 }
+@media screen and (max-width: 900px) {
+  .services__item {
+    padding: 20px 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .services__item {
     height: 335px;
@@ -798,6 +803,12 @@ p {
   width: 43px;
   height: 43px;
 }
+@media screen and (max-width: 1024px) {
+  .services__right-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
 .services__subtitle {
   max-width: 497px;
   width: 100%;
@@ -814,12 +825,22 @@ p {
   .right-title {
     font-size: 22px;
     line-height: 27.5px;
+    max-width: 297px;
+  }
+  .services__subtitle {
+    max-width: 297px;
   }
 }
 @media screen and (max-width: 768px) {
   .right-title {
     font-size: 16px;
     line-height: 20px;
+  }
+  .right-title {
+    max-width: 100%;
+  }
+  .services__subtitle {
+    max-width: 100%px;
   }
 }
 
@@ -849,7 +870,11 @@ p {
   transition: 0.3s ease-in-out;
   opacity: 1;
 }
-
+@media screen and (max-width: 1024px) {
+  .services__right-link {
+    opacity: 1 !important;
+  }
+}
 /***************************************************partners******************************************************/
 .partners {
   width: 100%;
@@ -1812,7 +1837,7 @@ p {
   padding: 83px 100px;
   box-sizing: border-box;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1281px) {
   .privileges__left {
     background-image: url(../images/priv-bg1024.png);
     padding: 40px 50px;
@@ -1970,7 +1995,7 @@ p {
     margin: 153px auto -30px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .news__wrapper {
     margin: 73px auto 0;
     gap: 16px;
@@ -1983,6 +2008,11 @@ p {
 }
 @media screen and (max-width: 1023px) {
   .news__inner {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .news__inner {
     flex-direction: column;
   }
 }
@@ -1994,6 +2024,16 @@ p {
 .news__img-box {
   display: flex;
   gap: 20px;
+}
+@media screen and (max-width: 1023px) {
+  .news__img-box {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .news__img-box {
+    width: 100%;
+  }
 }
 /***********news__img-lef*******************/
 .news__img-left {
@@ -2009,9 +2049,19 @@ p {
     height: 550px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .news__img-left {
+    max-width: 100%;
+    height: 415px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .news__img-left {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 400px) {
   .news__img-left {
-    width: 350px;
     height: 320px;
   }
 }
@@ -2060,13 +2110,12 @@ p {
 }
 @media screen and (max-width: 1023px) {
   .news__text-box {
-    max-width: 700px;
+    max-width: 50%;
   }
 }
 .news__list-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 54px;
 }
 @media screen and (max-width: 768px) {
   .news__list-wrapper {
@@ -2076,13 +2125,19 @@ p {
 .news__list {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  padding-bottom: 29px;
+  padding-top: 26px;
+  border-bottom: 1px solid #e3e4e6;
+  gap: 8px;
+}
+.news__list:first-child {
+  padding-top: 0;
 }
 .news__we-subtitle {
   color: #a1a4a7;
 }
 .news__button {
-  margin-top: 90px;
+  margin-top: 53px;
   width: 370px;
   height: 63px;
   background: #ffffff;
@@ -2160,6 +2215,7 @@ p {
   bottom: 50px;
   left: 60px;
   transition: all 0.5s;
+  gap: 20px;
 }
 @media screen and (max-width: 1024px) {
   .news__text-inner {
@@ -2171,12 +2227,20 @@ p {
   font-size: 20px;
   line-height: 25px;
   color: #ffffff;
-  transition: all 0.5s;
+}
+@media screen and (max-width: 1024px) {
+  .news__title-inner {
+    font-size: 22px;
+    line-height: 27.5px;
+  }
 }
 .news__title-link {
-  opacity: 0;
+  color: #ffffff;
 }
-.news__img-left:hover .news__title-link {
+.news__title-link .services__link-svg {
+  fill: white;
+}
+/* .news__img-left:hover .news__title-link {
   opacity: 1;
   transition: all 0.5s;
 }
@@ -2191,7 +2255,7 @@ p {
 .news__img-right:hover .news__title-inner {
   transition: all 0.5s;
   margin-bottom: 20px;
-}
+} */
 /********************************rel-section****************************/
 .rel-section {
   position: relative;
