@@ -61,3 +61,11 @@ const resultSearch = document.querySelector(".search__result");
 resulBtnSearch.addEventListener("click", () => {
   resultSearch.classList.add("active");
 });
+
+/***burger***/
+const burgerBtn = document.querySelector(".burger");
+const menuTab = document.querySelector(".burger-tab");
+
+burgerBtn.addEventListener("click", () => {
+  menuTab.classList.add("active");
+});
