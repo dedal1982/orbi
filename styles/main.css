@@ -257,7 +257,7 @@ p {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
 }
 @media screen and (max-width: 400px) {
@@ -268,7 +268,7 @@ p {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     border-radius: 0 0 20px 20px;
   }
 }
@@ -425,7 +425,7 @@ p {
   text-align: center;
   text-transform: uppercase;
   position: absolute;
-  top: 49%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -765,7 +765,6 @@ p {
     padding-left: 50px;
     padding-right: 50px;
     box-sizing: border-box;
-    align-items: inherit;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1204,10 +1203,9 @@ p {
     width: 50%;
     height: 520px;
     background-image: url(../icons/aspirations2.jpg);
-    /* height: 296px; */
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .aspirations__image {
     height: 296px;
   }
@@ -2177,7 +2175,7 @@ p {
 }
 @media screen and (max-width: 1024px) {
   .news__wrapper {
-    margin: 153px auto -30px;
+    margin: 153px auto 10px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2260,6 +2258,24 @@ p {
   .news__subtitle {
     top: 50px;
     left: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .top-news__we-subtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 72px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+@media screen and (max-width: 850px) {
+  .top-news__we-subtitle {
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    line-height: 16.25px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -2346,12 +2362,6 @@ p {
   border-bottom: 1px solid #e3e4e6;
   gap: 8px;
 }
-@media screen and (max-width: 600px) {
-  .news__list {
-    gap: 5px;
-    padding-bottom: 20px;
-  }
-}
 .news__list:first-child {
   padding-top: 0;
 }
@@ -2360,6 +2370,12 @@ p {
 }
 .news__we-subtitle {
   color: #a1a4a7;
+}
+@media screen and (max-width: 600px) {
+  .news__list {
+    gap: 5px;
+    padding-bottom: 20px;
+  }
 }
 .news__button {
   margin-top: 53px;
@@ -2373,6 +2389,11 @@ p {
   .news__button {
     width: 320px;
     margin-top: 45px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .news__button {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2524,7 +2545,7 @@ p {
 }
 @media screen and (max-width: 1024px) {
   .rel-section {
-    top: 122px;
+    top: 153px;
     padding: 62px 70px;
   }
 }
