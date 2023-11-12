@@ -9,9 +9,13 @@
 // };
 const dropButton = document.getElementById("menu-drop");
 const menuDrop = document.querySelector(".header__menu");
+const menuArrow = document.querySelector(".menu-drop");
+const menuLinkColor = document.querySelector(".menu-item");
 
 dropButton.addEventListener("click", () => {
   menuDrop.classList.toggle("active");
+  menuArrow.classList.toggle("active");
+  menuLinkColor.classList.toggle("active");
 });
 
 const tabItems = Array.from(
