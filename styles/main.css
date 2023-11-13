@@ -3353,6 +3353,9 @@ p {
 .mobile-menu__btn_type-red {
   color: #ed1c3b;
 }
+.mobile-menu__phone-link {
+  display: none;
+}
 @media screen and (max-width: 1400px) {
   .mobile-menu__list-box {
     justify-content: space-around;
@@ -3370,6 +3373,9 @@ p {
 @media screen and (max-width: 940px) {
   .footer-hidden {
     display: none;
+  }
+  .mobile-menu__phone-link {
+    display: flex;
   }
   .mobile-menu__grid-item {
     flex-direction: column;
