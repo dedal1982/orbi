@@ -3445,6 +3445,7 @@ p {
 .mobile-menu__catalog-list.active {
   display: flex;
   flex-direction: column;
+  z-index: 10;
 }
 /*******************************/
 #video-block {
