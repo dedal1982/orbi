@@ -1212,7 +1212,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .aspirations__image {
-    height: 296px;
+    height: auto;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1237,17 +1237,22 @@ p {
   background: #f8f8fb;
   border-radius: 20px;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1450px) {
   .aspirations__inner {
     padding: 45px 50px;
     max-width: 484px;
     padding: 20px 20px;
+    max-width: 50%;
   }
 }
 @media screen and (max-width: 1000px) {
   .aspirations__inner {
-    max-width: 100%;
     justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aspirations__inner {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 400px) {
@@ -1329,6 +1334,7 @@ p {
 @media screen and (max-width: 1024px) {
   .aspirations__button {
     margin-top: 30px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
