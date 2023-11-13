@@ -1418,7 +1418,7 @@ p {
   .we-work__left {
     gap: 57px;
     max-width: 100%;
-    justify-content: space-around;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 1023px) {
