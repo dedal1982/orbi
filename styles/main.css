@@ -207,7 +207,7 @@ p {
 .burger {
   display: none;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1240px) {
   .burger {
     display: block;
     margin-left: 40px;
@@ -339,6 +339,11 @@ p {
   font-size: 18px;
   line-height: 23.4px;
   color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.navigation__phone:hover {
+  color: #51a8c3;
+  transition: 0.3s ease-in-out;
 }
 @media screen and (max-width: 1300px) {
   .navigation__phone {
