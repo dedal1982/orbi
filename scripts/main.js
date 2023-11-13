@@ -77,3 +77,10 @@ burgerClose.addEventListener("click", () => {
   menuTab.classList.remove("active");
   pageLock.classList.remove("lock");
 });
+
+const catButton = document.querySelector(".mobile-menu__catalog");
+const catMenuOpen = document.querySelector(".mobile-menu__catalog-list");
+
+catButton.addEventListener("click", () => {
+  catMenuOpen.classList.toggle("active");
+});
