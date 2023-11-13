@@ -1639,7 +1639,23 @@ p {
     );
   }
   .we-work__mobile:nth-child(6)::before {
-    height: 30px !important;
+    width: 0;
+    height: 0;
+  }
+  .we-work__mobile:nth-child(6)::after {
+    content: url(../icons/lineD.png);
+    position: absolute;
+    top: 79px;
+    left: -18px;
+    height: 100%;
+    width: 1px;
+    z-index: -1;
+  }
+  .we-work__mobile:nth-child(1)::after {
+    content: url(../icons/line.png);
+    position: absolute;
+    top: -9px;
+    left: -20px;
   }
   .we-work__mobile-img {
     position: relative;
