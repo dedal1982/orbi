@@ -1949,6 +1949,11 @@ p {
   width: 0;
   height: 0;
 }
+@media screen and (max-width: 1367px) {
+  .distributor__item::after {
+    right: -37px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .distributor__item::after {
     content: "";
