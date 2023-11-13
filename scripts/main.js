@@ -70,9 +70,10 @@ const burgerClose = document.querySelector(".mobile-menu__burger");
 
 burgerOpen.addEventListener("click", () => {
   menuTab.classList.add("active");
-  pageLock.classList.toggle("lock");
+  pageLock.classList.add("lock");
 });
 
 burgerClose.addEventListener("click", () => {
   menuTab.classList.remove("active");
+  pageLock.classList.remove("lock");
 });
