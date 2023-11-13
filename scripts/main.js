@@ -63,9 +63,16 @@ resulBtnSearch.addEventListener("click", () => {
 });
 
 /***burger***/
-const burgerBtn = document.querySelector(".burger");
-const menuTab = document.querySelector(".burger-tab");
+const burgerOpen = document.querySelector(".burger");
+const menuTab = document.querySelector(".mobile-menu");
+const pageLock = document.querySelector(".page");
+const burgerClose = document.querySelector(".mobile-menu__burger");
 
-burgerBtn.addEventListener("click", () => {
+burgerOpen.addEventListener("click", () => {
   menuTab.classList.add("active");
+  pageLock.classList.toggle("lock");
+});
+
+burgerClose.addEventListener("click", () => {
+  menuTab.classList.remove("active");
 });

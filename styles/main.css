@@ -1,4 +1,4 @@
-.page {
+.page__content {
   /* max-width: 1920px; */
   width: 100%;
   font-family: "Mont", sans-serif;
@@ -31,6 +31,9 @@ h5,
 h6,
 p {
   margin: 0;
+}
+.lock {
+  overflow: hidden;
 }
 .social-icon {
   width: 21px;
@@ -1197,7 +1200,7 @@ p {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    margin-top: 35px;
+    margin-top: 56px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -1635,6 +1638,9 @@ p {
       rgba(43, 223, 39, 0) 99.99%
     );
   }
+  .we-work__mobile:nth-child(6)::before {
+    height: 30px !important;
+  }
   .we-work__mobile-img {
     position: relative;
     bottom: 2px;
@@ -1643,6 +1649,7 @@ p {
     gap: 3px;
   }
 }
+
 /******************************************/
 #b-1:before {
   content: "";
@@ -2597,6 +2604,9 @@ p {
     height: 440px;
     top: 155px;
   }
+  .main-rel-section {
+    top: 146px;
+  }
 }
 .rel-section__item {
   display: flex;
@@ -3180,26 +3190,77 @@ p {
 .nav-list-item.active {
   color: #5f6163;
 }
-/***********header-tab****************/
-.burger-tab {
+/***********mobile-menu****************/
+.mobile-menu {
   display: none;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #cdd4d7;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  overflow: auto;
 }
-.burger-tab.active {
-  display: block;
-  position: absolute;
+.mobile-menu.active {
+  display: flex;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
   background: #fff;
   z-index: 15;
+  transition: all 0.5s ease-in-out;
 }
-.burger-logo {
-  margin-right: 0;
+.mobile-menu__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.burger-tab-inner {
-  margin-top: 17px;
-  padding: 0;
+.burger-mobile {
+  width: 24px;
+  height: 24px;
+}
+.mobile-menu-header {
+  max-width: 924px;
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.mobile-menu__nav {
+  display: flex;
+  align-items: center;
+}
+.mobile-menu__logo {
+  width: 112px;
+}
+.mobile-menu__burger {
+  margin-left: 67px;
+}
+.mobile-menu__buttons {
+  margin-left: 28px;
+}
+.mobile-menu__search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto 0;
+}
+.mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu__list-box {
+  display: flex;
+  width: 100%;
+  margin: 52px auto 0;
+  gap: 72px;
+}
+.mobile-menu__menu-box {
+  gap: 0;
 }
 /*******************************/
 #video-block {
