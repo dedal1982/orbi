@@ -83,4 +83,5 @@ const catMenuOpen = document.querySelector(".mobile-menu__catalog-list");
 
 catButton.addEventListener("click", () => {
   catMenuOpen.classList.toggle("active");
+  menuArrow.classList.toggle("active");
 });
