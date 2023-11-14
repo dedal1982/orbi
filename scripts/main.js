@@ -12,11 +12,19 @@ const menuDrop = document.querySelector(".header__menu");
 const menuArrow = document.querySelector(".menu-drop");
 const menuLinkColor = document.querySelector(".menu-item");
 
-dropButton.addEventListener("click", () => {
+dropButton.addEventListener("mouseover", () => {
   menuDrop.classList.toggle("active");
   menuArrow.classList.toggle("active");
   menuLinkColor.classList.toggle("active");
   menuSearch.classList.remove("active");
+  pageLock.classList.toggle("lock");
+});
+
+const navOuth = document.querySelector(".navigation");
+
+navOuth.addEventListener("click", () => {
+  menuDrop.classList.remove("active");
+  pageLock.classList.remove("lock");
 });
 
 const tabItems = Array.from(

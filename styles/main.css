@@ -470,6 +470,7 @@ p {
 }
 /*********************************************top-subtitle***************************************/
 .top-subtitle {
+  font-family: "Mont";
   color: #5f6163;
   font-weight: 600;
   font-size: 18px;
@@ -1563,6 +1564,7 @@ p {
   background-repeat: no-repeat;
   transition: all 0.5s ease;
   position: relative;
+  z-index: 2;
 }
 @media screen and (max-width: 1024px) {
   .we-work__box {
@@ -1674,6 +1676,7 @@ p {
 }
 
 /******************************************/
+
 #b-1:before {
   content: "";
   position: absolute;
@@ -1794,41 +1797,14 @@ p {
     width: 74px;
     transform: translateX(-40px) rotate(346deg);
   }
-  #b-3::after {
-    content: "";
-    position: absolute;
-    left: 247px;
-    top: 14px;
-    max-width: 285px;
-    width: 74px;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      rgba(43, 223, 39, 0) 1.76%,
-      #2bdf27 13.02%,
-      #2bdf27 86.99%,
-      rgba(43, 223, 39, 0) 100%
-    );
-    transform: translateX(-40px) rotate(346deg);
-  }
-  #b-6:before {
-    top: 83px;
-    left: -63px;
-    width: 107px;
-    transform: translateX(-40px) rotate(347deg);
-  }
+
   #b-5:before {
     top: 33px;
     left: -60px;
     width: 101px;
     transform: translateX(-40px) rotate(13deg);
   }
-  #b-4:before {
-    top: 16px;
-    left: 0px;
-    width: 58px;
-    transform: translateX(-40px) rotate(14deg);
-  }
+
   #b-2:before {
     top: 33px;
     left: -59px;
@@ -1848,6 +1824,47 @@ p {
     width: 100%;
     transform: translateX(-40px) rotate(14deg);
   }
+}
+@media screen and (max-width: 1550px) {
+  #b-6:before {
+    top: 83px;
+    left: -63px;
+    width: 107px;
+    transform: translateX(-40px) rotate(347deg);
+  }
+  #b-4:before {
+    top: 16px;
+    left: 0px;
+    width: 58px;
+    transform: translateX(-40px) rotate(14deg);
+  }
+  #b-3::after {
+    content: "";
+    position: absolute;
+    left: 247px;
+    top: 14px;
+    max-width: 285px;
+    width: 74px;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      rgba(43, 223, 39, 0) 1.76%,
+      #2bdf27 13.02%,
+      #2bdf27 86.99%,
+      rgba(43, 223, 39, 0) 100%
+    );
+    transform: translateX(-40px) rotate(346deg);
+  }
+}
+#b-1:before,
+#b-2:before,
+#b-3:before,
+#b-4:before,
+#b-5:before,
+#b-6:before,
+#b-6::after,
+#b-3::after {
+  z-index: -1;
 }
 /************************************distributor*********************************************/
 .distributor {
