@@ -2036,6 +2036,11 @@ p {
   justify-content: space-between;
   gap: 20px;
 }
+@media screen and (max-width: 1280px) {
+  .privileges__inner {
+    justify-content: space-around;
+  }
+}
 @media screen and (max-width: 1024px) {
   .privileges__inner {
     align-items: center;
@@ -2162,8 +2167,9 @@ p {
   .privileges__right {
     padding: 0;
     max-width: fit-content;
-    height: 393px;
+    height: inherit;
     background: #ffffff;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
