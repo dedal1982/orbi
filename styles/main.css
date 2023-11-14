@@ -878,6 +878,11 @@ p {
   flex-direction: column;
   align-self: flex-end;
 }
+@media screen and (max-width: 1400px) {
+  .services__subtitle {
+    max-width: 457px;
+  }
+}
 @media screen and (max-width: 1300px) {
   .services__subtitle {
     max-width: 297px;
@@ -1144,7 +1149,7 @@ p {
 }
 @media screen and (max-width: 1024px) {
   .partners__img {
-    gap: 50px;
+    gap: 40px;
   }
 }
 /**************************swiper-wrapper**********************/
