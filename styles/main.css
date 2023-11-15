@@ -2931,7 +2931,7 @@ p {
   justify-content: space-between;
 }
 /*******************************************************************************/
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1366px) {
   .footer__grid-item:nth-of-type(5) {
     order: 6;
     flex-direction: column;
