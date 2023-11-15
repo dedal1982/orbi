@@ -88,8 +88,10 @@ burgerClose.addEventListener("click", () => {
 
 const catButton = document.querySelector(".mobile-menu__catalog");
 const catMenuOpen = document.querySelector(".mobile-menu__catalog-list");
+const buttonMobMen = document.querySelector(".mobile-footer__button-hidden");
 
 catButton.addEventListener("click", () => {
   catMenuOpen.classList.toggle("active");
   menuArrow.classList.toggle("active");
+  buttonMobMen.classList.toggle("active");
 });
