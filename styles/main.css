@@ -1423,7 +1423,7 @@ p {
   justify-content: space-between;
   gap: 20px;
 }
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1500px) {
   .we-work__left {
     gap: 57px;
     max-width: 100%;
@@ -1475,9 +1475,11 @@ p {
 .we-work__item-6 img {
   bottom: 78px;
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1550px) {
   .we-work__item-6 {
     transform: translateY(0);
+    height: 419px;
+    z-index: -1 !important;
   }
 }
 @media screen and (max-width: 1500px) {
@@ -1871,7 +1873,7 @@ p {
 #b-6:before,
 #b-6::after,
 #b-3::after {
-  z-index: -1;
+  z-index: -1 !important;
 }
 /************************************distributor*********************************************/
 .distributor {
