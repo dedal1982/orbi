@@ -3151,6 +3151,14 @@ p {
   fill: #191a1b;
   transition: 0.3s ease-in-out;
 }
+.menu-drop-link .red-fill {
+  fill: #ffffff !important;
+  transition: 0.3s ease-in-out;
+}
+.menu-drop-link:hover .red-fill {
+  fill: #ed1c3b !important;
+  transition: 0.3s ease-in-out;
+}
 .menu-drop-link:hover svg {
   fill: #ed1c3b;
   transition: 0.3s ease-in-out;
