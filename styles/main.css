@@ -3589,9 +3589,7 @@ p {
     display: block;
   }
 }
-.menu-list li:nth-child(3) svg path {
-  fill: #fff;
-}
+
 /****************************/
 .svg:hover svg path {
   stroke: #ed1c3b;
