@@ -78,6 +78,7 @@
   max-width: 940px;
   width: 100%;
 }
+
 .catalog__inner-top {
   display: flex;
   flex-direction: column;
@@ -355,7 +356,7 @@
   width: 100%;
   margin-top: 246px;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1270px) {
   .catalog__wrapper-right {
     display: none;
   }
@@ -371,6 +372,12 @@
   display: flex;
   gap: 38px;
   cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+  .catalog__select-title {
+    font-size: 17px;
+    gap: 20px;
+  }
 }
 .catalog__select-item {
   display: none;
