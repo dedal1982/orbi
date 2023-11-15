@@ -33,6 +33,7 @@
 .catalog__wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   margin: 100px auto 0;
 }
 @media screen and (max-width: 1024px) {
