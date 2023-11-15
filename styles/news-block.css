@@ -1,3 +1,6 @@
+.news-block__navigation {
+  margin: 22px auto 0;
+}
 .news-block {
   width: 100%;
 }
@@ -6,6 +9,7 @@
   margin-top: 99px;
   justify-content: space-between;
   gap: 20px;
+  align-items: flex-start;
 }
 .news-block__inner {
   display: flex;
@@ -87,4 +91,9 @@
 }
 .news-block__sticky {
   text-transform: uppercase;
+}
+.news-block__news {
+  position: sticky;
+  top: 50px;
+  margin-top: 150px;
 }
