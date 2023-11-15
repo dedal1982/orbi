@@ -167,6 +167,11 @@
 }
 .buttons-box-num.active {
   color: #2bdf27;
+  transition: 0.3s ease-in-out;
+}
+.buttons-box-num:hover {
+  color: #51a8c3;
+  transition: 0.3s ease-in-out;
 }
 @media screen and (max-width: 500px) {
   .buttons-box-num {
@@ -197,7 +202,7 @@
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  background: #f8f8fb;
+  background: #ed1c3b;
 }
 @media screen and (max-width: 767px) {
   .buttons-box-arrow {
@@ -206,11 +211,16 @@
   }
 }
 .buttons-box-arrow.active {
-  background: #ed1c3b;
+  background: #f8f8fb;
+  transition: 0.3s ease-in-out;
+}
+.buttons-box-arrow:hover {
+  background: #ca1831;
+  transition: 0.3s ease-in-out;
 }
 .buttons-box-arrow .box-arrow {
-  fill: #a1a4a7;
+  fill: #ffffff;
 }
 .buttons-box-arrow.active .box-arrow {
-  fill: #ffffff;
+  fill: #a1a4a7;
 }

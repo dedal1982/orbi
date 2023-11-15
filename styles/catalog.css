@@ -125,8 +125,18 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 25px;
-  color: #191a1b;
+  color: #a1a4a7;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.catalog__inner-letter:hover {
+  color: #191a1b;
+  transition: 0.3s ease-in-out;
+}
+.catalog__inner-letter.active {
+  color: #191a1b;
+  transition: 0.3s ease-in-out;
 }
 @media screen and (max-width: 1024px) {
   .catalog__inner-letter {
@@ -259,6 +269,7 @@
   border: 1px solid #eaebee;
   position: relative;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 .catalog__img-item:hover {
   border: 1px solid #ed1c3b;
@@ -381,10 +392,26 @@
   margin-top: 25px;
 }
 .catalog__select-title {
-  color: #191a1b;
+  color: #5f6163;
   display: flex;
   gap: 38px;
   cursor: pointer;
+}
+.catalog-hover {
+  color: #191a1b;
+  transition: 0.3s ease-in-out;
+}
+.catalog-hover:hover {
+  color: #ed1c3b;
+  transition: 0.3s ease-in-out;
+}
+.catalog-hover img {
+  transform: rotate(180deg);
+  transition: 0.3s ease-in-out;
+}
+.catalog-hover.active img {
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
 }
 @media screen and (max-width: 1300px) {
   .catalog__select-title {

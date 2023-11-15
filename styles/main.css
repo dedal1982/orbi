@@ -214,22 +214,26 @@ p {
     display: none;
   }
 }
-.burger {
+.burger,
+.burger-white {
   display: none;
 }
 @media screen and (max-width: 1240px) {
-  .burger {
+  .burger,
+  .burger-white {
     display: block;
     margin-left: 40px;
   }
 }
 @media screen and (max-width: 768px) {
-  .burger {
+  .burger,
+  .burger-white {
     margin-left: 0;
   }
 }
 @media screen and (max-width: 767px) {
-  .burger {
+  .burger,
+  .burger-white {
     width: 35px;
     height: 11px;
   }
