@@ -3593,3 +3593,7 @@ p {
   fill: #fff;
 }
 /****************************/
+.svg:hover svg path {
+  stroke: #ed1c3b;
+  transition: 0.3s ease-in-out;
+}
