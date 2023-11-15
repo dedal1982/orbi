@@ -1,0 +1,16 @@
+.news-block {
+  width: 100%;
+}
+.news-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 99px;
+}
+.nav-list-span {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
