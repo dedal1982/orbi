@@ -3291,6 +3291,7 @@ p {
   display: flex;
   gap: 10px;
   color: #a1a4a7;
+  text-transform: uppercase;
 }
 .nav-list-item.active {
   color: #5f6163;
