@@ -1,3 +1,9 @@
+.inner-link {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22.1px;
+  color: #ed1c3b;
+}
 .contacts {
   width: 100%;
 }
@@ -25,7 +31,13 @@
   color: #191a1b;
   text-transform: uppercase;
 }
-@media screen and (max-width: 1425px) {
+@media screen and (max-width: 1280px) {
+  .contacts__title {
+    font-size: 50px;
+    line-height: 51px;
+  }
+}
+@media screen and (max-width: 768px) {
   .contacts__title {
     font-size: 30px;
     line-height: 36px;
@@ -63,7 +75,12 @@
 }
 @media screen and (max-width: 1425px) {
   .contacts__top-left {
-    padding: 40px 50px;
+    padding: 47px 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contacts__top-left {
+    height: 380px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -106,13 +123,13 @@
 }
 .contacts-subtitle {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 36px;
   line-height: 50px;
   color: #191a1b;
 }
 @media screen and (max-width: 1425px) {
   .contacts-subtitle {
-    font-size: 35px;
+    font-size: 32px;
     line-height: 43.75px;
   }
 }
@@ -122,12 +139,29 @@
     line-height: 31.25px;
   }
 }
+@media screen and (max-width: 500px) {
+  .contacts-subtitle {
+    font-size: 23px;
+    line-height: 27px;
+  }
+}
 .contacts-item {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+@media screen and (max-width: 1024px) {
+  .contacts-item {
+    align-items: baseline;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contacts-item {
+    gap: 5px;
+  }
+}
 .contacts-paragraph {
+  font-family: "Mont";
   font-weight: 700;
   font-size: 23px;
   line-height: 28.75px;
@@ -139,27 +173,29 @@
     line-height: 21.25px;
   }
 }
-/****contacts__top-right****/
-.contacts__top-right {
+/****map-wrapper****/
+.map-wrapper {
   width: 50%;
   border-radius: 20px;
 }
 @media screen and (max-width: 767px) {
-  .contacts__top-right {
+  .map-wrapper {
     width: 100%;
-    height: 400px;
+  }
+}
+.map-wrapper iframe {
+  width: 100%;
+  height: 435px;
+  border-radius: inherit;
+}
+@media screen and (max-width: 1024px) {
+  .map-wrapper iframe {
+    height: 380px;
   }
 }
 @media screen and (max-width: 500px) {
-  .contacts__top-right {
-    width: 100%;
+  .map-wrapper iframe {
     height: 400px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .contacts__down {
-    flex-direction: column-reverse;
-    gap: 15px;
   }
 }
 .contacts__slide {
@@ -178,9 +214,16 @@
   gap: 100px;
   margin-bottom: 207px;
 }
+@media screen and (max-width: 1280px) {
+  .contacts__inner {
+    gap: 70px;
+    margin-bottom: 156px;
+  }
+}
 @media screen and (max-width: 768px) {
   .contacts__inner {
     gap: 40px;
+    margin-bottom: 80px;
   }
 }
 .contacts__down-right {
@@ -189,6 +232,11 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+}
+@media screen and (max-width: 500px) {
+  .contacts__down-right {
+    gap: 15px;
+  }
 }
 .contacts__down-item {
   width: 100%;
@@ -199,6 +247,39 @@
   padding: 60px 90px;
   box-sizing: border-box;
 }
+.contacts__down {
+  border-radius: 20px;
+}
+.contacts__down marquee {
+  width: 50%;
+  border-radius: inherit;
+}
+@media screen and (max-width: 1280px) {
+  .contacts__down marquee {
+    height: 440px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .contacts__down marquee {
+    height: 380px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__down marquee {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contacts__down marquee {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__down {
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+}
 @media screen and (max-width: 1400px) {
   .contacts__down-item {
     padding: 50px 50px;
@@ -206,7 +287,7 @@
 }
 @media screen and (max-width: 500px) {
   .contacts__down-item {
-    padding: 25px 20px;
+    padding: 19px 20px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -218,6 +299,22 @@
     align-self: end;
   }
 }
+@media screen and (max-width: 500px) {
+  .contacts__down-item .contacts__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
 .contact__footer-grid {
   margin-top: 126px;
+}
+@media screen and (max-width: 1024px) {
+  .contact__footer-grid {
+    margin-top: 85px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact__footer-grid {
+    margin-top: 35px;
+  }
 }
