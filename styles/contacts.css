@@ -22,7 +22,7 @@
     margin-top: 0;
   }
 }
-.contacts__title {
+.contacts-title {
   margin-top: 35px;
   margin-bottom: 40px;
   font-weight: 500;
@@ -32,19 +32,19 @@
   text-transform: uppercase;
 }
 @media screen and (max-width: 1280px) {
-  .contacts__title {
+  .contacts-title {
     font-size: 50px;
     line-height: 51px;
   }
 }
 @media screen and (max-width: 768px) {
-  .contacts__title {
+  .contacts-title {
     font-size: 30px;
     line-height: 36px;
   }
 }
 @media screen and (max-width: 500px) {
-  .contacts__title {
+  .contacts-title {
     margin-top: 16px;
     margin-bottom: 20px;
   }
