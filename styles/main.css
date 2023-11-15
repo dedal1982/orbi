@@ -263,7 +263,7 @@ p {
 .hero img {
   display: none;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .hero {
     display: block;
     background-image: url(../images/bg-1024.png);
@@ -271,15 +271,15 @@ p {
     background-size: cover;
     background-position: center;
   }
-}
-@media screen and (max-width: 400px) {
+} */
+/* @media screen and (max-width: 400px) {
   .hero {
     border-radius: 0 0 20px 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
-}
+} */
 
 .navigation {
   position: absolute;
@@ -3567,11 +3567,29 @@ p {
   object-fit: cover;
   border-radius: inherit;
 }
+#video-block video:nth-child(2) {
+  display: none;
+}
+#video-block video:nth-child(3) {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   #video-block video {
     display: none;
+  }
+  #video-block video:nth-child(2) {
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  #video-block video:nth-child(2) {
+    display: none;
+  }
+  #video-block video:nth-child(3) {
+    display: block;
   }
 }
 .menu-list li:nth-child(3) svg path {
   fill: #fff;
 }
+/****************************/
