@@ -101,8 +101,15 @@ p {
   width: 102px;
   height: 21px;
 }
+.header-dropdown.header__menu {
+  transition: 0.3s ease-out;
+}
 .header-dropdown:hover .header__menu {
   display: block;
+}
+.header-dropdown:hover .menu-drop {
+  transform: rotate(180deg);
+  transition: 0.3s ease-out;
 }
 @media screen and (max-width: 1024px) {
   .logo {
@@ -3067,12 +3074,18 @@ p {
 
 /*****************************header__menu****************************/
 
+.header-dropdown {
+  padding-bottom: 40px;
+  margin-top: 38px;
+}
+
 .header-dropdown .header__menu {
   display: none;
 }
 .header__menu {
   position: absolute;
-  top: 140px;
+  top: 0;
+  margin-top: 140px;
   width: 100%;
   background: #ffffff 95%;
   border-top: 1px solid #e3e4e6;
