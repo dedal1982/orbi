@@ -1,72 +1,78 @@
-// const dropButton = document.getElementById("menu-drop");
-// const menuDrop = document.querySelector(".header__menu");
-// const menuArrow = document.querySelector(".menu-drop");
-// const menuLinkColor = document.querySelector(".menu-item");
+// const tabItems = Array.from(document.querySelectorAll(".catalog-hover"));
+// const formItems = Array.from(
+//   document.querySelectorAll(".catalog__select-item")
+// );
 
-// const navOuth = document.querySelector(".navigation");
+// const clearActiveTabs = (element, className = "active") => {
+//   element.find((item) => item.classList.remove(`${className}`));
+// };
 
-// navOuth.addEventListener("click", () => {
-//   menuDrop.classList.remove("active");
-// });
+// const setActiveTabs = (element, index, className = "active") => {
+//   element[index].classList.add(`${className}`);
+// };
 
-const tabItems = Array.from(document.querySelectorAll(".catalog-hover"));
-const formItems = Array.from(
-  document.querySelectorAll(".catalog__select-item")
-);
+// const chekTab = (item, index) => {
+//   item.addEventListener("click", () => {
+//     clearActiveTabs(tabItems);
+//     clearActiveTabs(formItems);
 
-const clearActiveTabs = (element, className = "active") => {
-  element.find((item) => item.classList.remove(`${className}`));
-};
+//     setActiveTabs(tabItems, index);
+//     setActiveTabs(formItems, index);
+//   });
+// };
+// tabItems.forEach(chekTab);
 
-const setActiveTabs = (element, index, className = "active") => {
-  element[index].classList.add(`${className}`);
-};
-
-const chekTab = (item, index) => {
-  item.addEventListener("click", () => {
-    clearActiveTabs(tabItems);
-    clearActiveTabs(formItems);
-
-    setActiveTabs(tabItems, index);
-    setActiveTabs(formItems, index);
-  });
-};
-tabItems.forEach(chekTab);
+/*****************************/
 
 /***********search***********/
-const buttonSearch = document.querySelector(".button-search");
-const menuSearch = document.querySelector(".search__menu");
+// const buttonSearch = document.querySelector(".button-search");
+// const menuSearch = document.querySelector(".search__menu");
 
-buttonSearch.addEventListener("click", () => {
-  menuSearch.classList.toggle("active");
-});
+// buttonSearch.addEventListener("click", () => {
+//   menuSearch.classList.toggle("active");
+// });
 
-const resulBtnSearch = document.querySelector(".button-search-menu");
-const resultSearch = document.querySelector(".search__result");
+// const resulBtnSearch = document.querySelector(".button-search-menu");
+// const resultSearch = document.querySelector(".search__result");
 
-resulBtnSearch.addEventListener("click", () => {
-  resultSearch.classList.toggle("active");
-});
+// resulBtnSearch.addEventListener("click", () => {
+//   resultSearch.classList.toggle("active");
+// });
 
-const resulBtnSearchM = document.querySelector(".button-search-menu-mob");
-const resultSearchM = document.querySelector(".search__result-mob");
+// const resulBtnSearchM = document.querySelector(".button-search-menu-mob");
+// const resultSearchM = document.querySelector(".search__result-mob");
 
-resulBtnSearch.addEventListener("click", () => {
-  resultSearch.classList.add("active");
-});
+// resulBtnSearch.addEventListener("click", () => {
+//   resultSearch.classList.add("active");
+// });
 
 /***burger***/
+function openMenu() {
+  menuTab.classList.add("active");
+}
+
+function closeMenu() {
+  menuTab.classList.remove("active");
+}
+
 const burgerOpen = document.getElementById("burgerOpen");
 const menuTab = document.querySelector(".mobile-menu");
 const burgerClose = document.querySelector(".mobile-menu__burger");
 
-burgerOpen.addEventListener("click", () => {
-  menuTab.classList.add("active");
-});
+burgerOpen.addEventListener("click", openMenu);
 
-burgerClose.addEventListener("click", () => {
-  menuTab.classList.remove("active");
-});
+burgerClose.addEventListener("click", closeMenu);
+// const burgerOpen = document.getElementById("burgerOpen");
+// const menuTab = document.querySelector(".mobile-menu");
+// const burgerClose = document.querySelector(".mobile-menu__burger");
+
+// burgerOpen.addEventListener("click", () => {
+//   menuTab.classList.add("active");
+// });
+
+// burgerClose.addEventListener("click", () => {
+//   menuTab.classList.remove("active");
+// });
 
 const catButton = document.querySelector(".mobile-menu__catalog");
 const catMenuOpen = document.querySelector(".mobile-menu__catalog-list");
@@ -79,13 +85,17 @@ catButton.addEventListener("click", () => {
   catArrow.classList.toggle("active");
 });
 /******/
-// const header = document.querySelector(".sticky-header");
+function openPopup(popup) {
+  popup.classList.toggle("active");
+}
+const btn1 = document.getElementById("tab1");
+const list1 = document.querySelector(".list1");
+const btn2 = document.getElementById("tab2");
+const list2 = document.querySelector(".list2");
 
-// window.addEventListener("scroll", function () {
-//   if (window.pageYOffset > 1000) {
-//     header.classList.add("active");
-//   } else {
-//     header.classList.remove("active");
-//   }
-// });
-/****/
+btn1.addEventListener("click", () => {
+  openPopup(list1);
+});
+btn2.addEventListener("click", () => {
+  openPopup(list2);
+});
