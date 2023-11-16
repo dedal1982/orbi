@@ -3702,10 +3702,15 @@ p {
   background-color: #fff;
   transition: top 0.3s ease-in-out;
 }
-
-.sticky-header.active {
-  top: 0; /* Показываем хедер после прокрутки 1000px */
-}
 .white-icon {
   fill: white;
+}
+
+.menu-drop-link .red-fill-mob {
+  fill: #ffffff !important;
+  transition: 0.3s ease-in-out;
+}
+.menu-drop-link:hover .red-fill-mob {
+  fill: #ed1c3b !important;
+  transition: 0.3s ease-in-out;
 }
