@@ -73,6 +73,11 @@
     margin: 95px auto 0;
   }
 }
+@media screen and (max-width: 1370px) {
+  .trinity__item {
+    gap: 20px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .trinity__item {
     flex-direction: row-reverse;
@@ -107,6 +112,11 @@
   width: 220px;
   height: 220px;
   margin-top: 8px;
+}
+@media screen and (max-width: 1440px) {
+  .trinity__img-box {
+    width: 453px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .trinity__img-box {

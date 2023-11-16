@@ -351,6 +351,7 @@ p {
   line-height: 23.4px;
   color: #ffffff;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 .navigation__phone:hover {
   color: #51a8c3;
@@ -3310,6 +3311,7 @@ p {
   gap: 10px;
   margin-top: 92px;
 }
+
 @media screen and (max-width: 1024px) {
   .nav-list-links {
     margin-top: 86px;
@@ -3320,9 +3322,13 @@ p {
   gap: 10px;
   color: #a1a4a7;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
 }
 .nav-list-item.active {
   color: #5f6163;
+}
+.nav-list-item:hover {
+  color: #51a8c3;
 }
 /***********mobile-menu****************/
 .mobile-menu {
@@ -3640,4 +3646,7 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+}
+.nav-list-span {
+  color: #5f6163;
 }
