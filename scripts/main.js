@@ -39,15 +39,19 @@ const menuSearch = document.querySelector(".search__menu");
 
 buttonSearch.addEventListener("click", () => {
   menuSearch.classList.toggle("active");
-  menuDrop.classList.remove("active");
-  resultSearch.classList.remove("active");
 });
 
-// const resulBtnSearch = document.querySelector(".button-search-menu");
-// const resultSearch = document.querySelector(".search__result");
+const resulBtnSearch = document.querySelector(".button-search-menu");
+const resultSearch = document.querySelector(".search__result");
+
+resulBtnSearch.addEventListener("click", () => {
+  resultSearch.classList.toggle("active");
+});
+
+// const resulBtnSearchM = document.querySelector(".button-search-menu-mob");
+// const resultSearchM = document.querySelector(".search__result-mob");
 
 // resulBtnSearch.addEventListener("click", () => {
-//   // console.log(111);
 //   resultSearch.classList.add("active");
 // });
 
