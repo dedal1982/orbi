@@ -3723,3 +3723,8 @@ p {
 .navigation.active {
   display: none;
 }
+/********свайпер********/
+.brands_slider .swiper-wrapper {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
