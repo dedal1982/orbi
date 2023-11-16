@@ -2001,15 +2001,39 @@ p {
     right: -37px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1277px) {
+  .distributor__item::after {
+    right: -10px;
+  }
+}
+
+@media screen and (max-width: 1232px) {
   .distributor__item::after {
     content: "";
     bottom: 0;
-    right: -35px;
+    right: -20px;
     position: absolute;
     width: 1px;
     height: 110px;
     background: #e3e4e6;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .distributor__item::after {
+    right: -12px;
+  }
+}
+@media screen and (max-width: 1193px) {
+  .distributor__item::after {
+    width: 0;
+    height: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .distributor__item::after {
+    right: -22px;
+    width: 1px;
+    height: 110px;
   }
 }
 @media screen and (max-width: 1023px) {
