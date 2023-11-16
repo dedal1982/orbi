@@ -219,7 +219,7 @@
   flex-direction: column;
   gap: 7px;
   border-bottom: 1px solid #e3e4e6;
-  padding-bottom: 30px;
+  padding-bottom: 0;
 }
 .trinity__news-subtitle {
   font-weight: 600;
@@ -356,4 +356,29 @@
 }
 .trinity__navigation-inner {
   margin: 22px auto 0;
+}
+.trinity__page-link {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .trinity__page-link {
+    display: flex;
+    margin-bottom: 0 !important;
+    margin-top: 10px;
+  }
+}
+.trinity__news-item a {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.trinity__news-item:hover a {
+  opacity: 1;
+}
+@media screen and (max-width: 1024px) {
+  .trinity__news-item a {
+    display: none;
+  }
+  .trinity__news-item {
+    padding-bottom: 30px;
+  }
 }
