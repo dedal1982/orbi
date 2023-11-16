@@ -1,6 +1,16 @@
 .news-block__navigation {
   margin: 22px auto 0;
 }
+@media screen and (max-width: 1150px) {
+  .news-block__navigation {
+    margin: 68px auto 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news-block__navigation {
+    margin: 24px auto 0;
+  }
+}
 .news-block {
   width: 100%;
 }
@@ -10,6 +20,22 @@
   justify-content: space-between;
   gap: 20px;
   align-items: flex-start;
+}
+@media screen and (max-width: 1150px) {
+  .news-block__wrapper {
+    flex-direction: column;
+    margin-bottom: 157px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .news-block__wrapper {
+    margin-bottom: 157px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .news-block__wrapper {
+    margin-top: 0;
+  }
 }
 .news-block__inner {
   display: flex;
@@ -25,11 +51,32 @@
   white-space: nowrap;
   overflow: hidden;
 }
+@media screen and (max-width: 1150px) {
+  .nav-list-span {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-list-span {
+    display: block;
+    max-width: 120px;
+  }
+}
 .news-block__top {
   display: flex;
   flex-direction: column;
   margin-top: 37px;
   gap: 17px;
+}
+@media screen and (max-width: 500px) {
+  .news-block__top {
+    margin-top: 19px;
+    gap: 8px;
+  }
+  .news-block__distributor-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 .news-block__image {
   width: 100%;
@@ -42,14 +89,37 @@
   height: 100%;
   border-radius: inherit;
 }
+@media screen and (max-width: 1150px) {
+  .news-block__image {
+    height: 280px;
+    margin-top: 31px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .news-block__image {
+    height: 150px;
+    margin-top: 18px;
+  }
+}
 .news-block__text-box {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+
 .news-block__title {
   color: #191a1b;
   margin-top: 50px;
+}
+@media screen and (max-width: 1150px) {
+  .news-block__title {
+    margin-top: 39px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .news-block__title {
+    margin-top: 20px;
+  }
 }
 .news-block__paragraph {
   color: #5f6163;
@@ -61,6 +131,11 @@
 .news-block__paragraph a {
   color: #51a8c3;
 }
+@media screen and (max-width: 500px) {
+  .news-block__paragraph {
+    margin-top: 12px;
+  }
+}
 .news-block__links-item {
   width: 100%;
   display: flex;
@@ -71,23 +146,51 @@
   margin-top: 70px;
   margin-bottom: 205px;
 }
+@media screen and (max-width: 1150px) {
+  .news-block__links-item {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .news-block__links-item {
+    display: none;
+  }
+}
 .news-block__link {
-  color: #a1a4a7;
+  color: #ed1c3b;
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.news-block__link.active {
+  color: #a1a4a7;
 }
 .news-block__link svg {
+  fill: #ed1c3b;
+  transition: all 0.3s ease-in-out;
+}
+.news-block__link.active svg {
   fill: #a1a4a7;
 }
 .news-block__link:hover {
-  color: #ed1c3b;
+  color: #51a8c3;
 }
 .news-block__link:hover svg {
-  fill: #ed1c3b;
+  fill: #51a8c3;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 500px) {
+  .news-block__link {
+    width: 14px;
+    line-height: 18.2px;
+  }
+  .news-block__link span {
+    display: none;
+  }
 }
 .news-block__sticky {
   text-transform: uppercase;
@@ -96,4 +199,47 @@
   position: sticky;
   top: 50px;
   margin-top: 150px;
+}
+
+@media screen and (max-width: 1150px) {
+  .news-block__news {
+    margin-top: 100px;
+  }
+  .news-block__opaciti {
+    opacity: 1;
+  }
+  .news-block__news-item {
+    gap: 12px;
+  }
+  .news-block__news-list {
+    gap: 48px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .news-block__news h3 {
+    display: block;
+    font-family: "TT Firs Neue Trl";
+    font-size: 35px;
+    line-height: 42px;
+    color: #191a1b;
+  }
+  .news-block__text {
+    font-size: 18px;
+    line-height: 22.5px;
+  }
+  @media screen and (max-width: 500px) {
+    .news-block__text {
+      font-size: 14px;
+      line-height: 17.5px;
+    }
+  }
+  .news-block__news {
+    margin-top: 129px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .news-block__news h3 {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
 }
