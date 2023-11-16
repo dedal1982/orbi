@@ -34,26 +34,26 @@ const chekTab = (item, index) => {
 tabItems.forEach(chekTab);
 
 /***********search***********/
-// const buttonSearch = document.querySelector(".button-search");
-// const menuSearch = document.querySelector(".search__menu");
+const buttonSearch = document.querySelector(".button-search");
+const menuSearch = document.querySelector(".search__menu");
 
-// buttonSearch.addEventListener("click", () => {
-//   menuSearch.classList.toggle("active");
-// });
+buttonSearch.addEventListener("click", () => {
+  menuSearch.classList.toggle("active");
+});
 
-// const resulBtnSearch = document.querySelector(".button-search-menu");
-// const resultSearch = document.querySelector(".search__result");
+const resulBtnSearch = document.querySelector(".button-search-menu");
+const resultSearch = document.querySelector(".search__result");
 
-// resulBtnSearch.addEventListener("click", () => {
-//   resultSearch.classList.toggle("active");
-// });
+resulBtnSearch.addEventListener("click", () => {
+  resultSearch.classList.toggle("active");
+});
 
-// const resulBtnSearchM = document.querySelector(".button-search-menu-mob");
-// const resultSearchM = document.querySelector(".search__result-mob");
+const resulBtnSearchM = document.querySelector(".button-search-menu-mob");
+const resultSearchM = document.querySelector(".search__result-mob");
 
-// resulBtnSearch.addEventListener("click", () => {
-//   resultSearch.classList.add("active");
-// });
+resulBtnSearch.addEventListener("click", () => {
+  resultSearch.classList.add("active");
+});
 
 /***burger***/
 const burgerOpen = document.getElementById("burgerOpen");
