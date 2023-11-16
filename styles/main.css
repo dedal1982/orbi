@@ -2012,6 +2012,12 @@ p {
     background: #e3e4e6;
   }
 }
+@media screen and (max-width: 1023px) {
+  .distributor__item::after {
+    width: 0;
+    height: 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .distributor__item::after {
     width: 0;
@@ -3672,3 +3678,4 @@ p {
 .white-icon {
   fill: white;
 }
+/* .menu-list .menu-drop-link li:nth-child(3):hover */
