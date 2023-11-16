@@ -3583,11 +3583,18 @@ p {
 
 .mobile-menu__catalog-list {
   display: none;
+  transition: all 0.3s ease-in-out;
 }
 .mobile-menu__catalog-list.active {
   display: flex;
   flex-direction: column;
   z-index: 10;
+}
+.mob-arrow {
+  transition: all 0.3s ease-in-out;
+}
+.mob-arrow.active {
+  transform: rotate(180deg);
 }
 @media screen and (max-width: 500px) {
   .mobile-menu__catalog {
@@ -3702,4 +3709,3 @@ p {
 .white-icon {
   fill: white;
 }
-/* .menu-list .menu-drop-link li:nth-child(3):hover */
