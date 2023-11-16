@@ -107,11 +107,15 @@ p {
 .header-dropdown:hover .header__menu {
   display: block;
 }
+
 .header-dropdown:hover .menu-drop {
   transform: rotate(180deg);
   transition: 0.3s ease-out;
+  fill: #ed1c3b;
 }
-
+.header-dropdown:hover a span {
+  color: #ed1c3b;
+}
 @media screen and (max-width: 1024px) {
   .logo {
     width: 112px;
