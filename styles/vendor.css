@@ -182,6 +182,10 @@
 }
 .trinity-subtitle a {
   color: #51a8c3;
+  transition: all 0.3s ease-in-out;
+}
+.trinity-subtitle a:hover {
+  color: #ed1c3b;
 }
 @media screen and (max-width: 1024px) {
   .trinity-subtitle {
