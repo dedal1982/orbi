@@ -219,6 +219,7 @@
   flex-direction: column;
   gap: 7px;
   border-bottom: 1px solid #e3e4e6;
+  padding-bottom: 30px;
 }
 .trinity__news-subtitle {
   font-weight: 600;
@@ -352,4 +353,7 @@
 }
 .trinity__right-link {
   padding-bottom: 0;
+}
+.trinity__navigation-inner {
+  margin: 22px auto 0;
 }
