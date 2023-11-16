@@ -1465,6 +1465,7 @@ p {
 .we-work__item-2 {
   height: 434px;
   transform: translateY(120px);
+  z-index: 1;
 }
 .we-work__item-2 img {
   bottom: 79px;
@@ -1493,6 +1494,11 @@ p {
 }
 .we-work__item-6 img {
   bottom: 78px;
+}
+@media screen and (max-width: 1551px) {
+  .we-work-left {
+    max-width: 840px;
+  }
 }
 @media screen and (max-width: 1551px) {
   .we-work__item-6 {
