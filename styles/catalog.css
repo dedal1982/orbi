@@ -244,7 +244,7 @@
 @media screen and (max-width: 1023px) {
   .catalog__container-list {
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     gap: 5px;
   }
 }
