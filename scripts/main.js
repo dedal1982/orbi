@@ -65,17 +65,18 @@ tabItems.forEach(chekTab);
 // });
 function handleClick() {
   menuTab.classList.add("active");
+  menuDesc.classList.remove("active");
 }
 
 const burgerOpen = document.getElementById("burgerOpen");
 const menuTab = document.querySelector(".mobile-menu");
-const menuDesc = document.querySelector(".navigation__inner");
+const menuDesc = document.querySelector(".navigation");
 
 burgerOpen.addEventListener("click", handleClick);
 
-// burgerClose.addEventListener("click", () => {
-//   menuTab.classList.remove("active");
-// });
+burgerClose.addEventListener("click", () => {
+  menuTab.classList.remove("active");
+});
 
 const catButton = document.querySelector(".mobile-menu__catalog");
 const catMenuOpen = document.querySelector(".mobile-menu__catalog-list");

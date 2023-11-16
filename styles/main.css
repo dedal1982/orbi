@@ -3714,3 +3714,7 @@ p {
   fill: #ed1c3b !important;
   transition: 0.3s ease-in-out;
 }
+/*********/
+.navigation.active {
+  display: none;
+}
