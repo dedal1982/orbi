@@ -48,11 +48,17 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+.news-page__item:hover img {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
 }
 .news-page__img {
   width: 100%;
   border-radius: 20px;
   height: auto;
+  overflow: hidden;
 }
 
 .news-page__img img {

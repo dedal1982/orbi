@@ -2800,7 +2800,7 @@ p {
   row-gap: 70px;
   margin: 343px 0 0 0;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1024px) {
   .footer__grid {
     display: grid;
     grid-template-columns: 150px 349px 216px;
@@ -2990,7 +2990,6 @@ p {
 /*******************************************************************************/
 @media screen and (max-width: 1366px) {
   .footer__grid-item:nth-of-type(5) {
-    order: 6;
     flex-direction: column;
   }
   .footer__grid-item:nth-of-type(5) .footer__btn-box {
@@ -3021,6 +3020,12 @@ p {
     gap: 125px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .footer__grid-item:nth-of-type(5) {
+    order: 6;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .footer__grid-item:nth-child(2) {
     justify-content: center;
