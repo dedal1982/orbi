@@ -1852,7 +1852,7 @@ p {
     transform: translateX(-40px) rotate(14deg);
   }
 }
-@media screen and (max-width: 1530px) {
+@media screen and (max-width: 1551px) {
   #b-4:before {
     top: 16px;
     left: 0px;
