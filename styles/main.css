@@ -1092,6 +1092,7 @@ p {
     gap: 40px;
     border: none;
     margin: 30px 0 auto;
+    border-radius: 0;
   }
 }
 .partners__up {

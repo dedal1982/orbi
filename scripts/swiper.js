@@ -11,11 +11,19 @@ const brands_slider = new Swiper(".brands_slider", {
   },
   breakpoints: {
     0: {
-      slidesPerView: "auto",
+      slidesPerView: 3,
       spaceBetween: 30,
     },
+    500: {
+      slidesPerView: 4,
+      spaceBetween: 44,
+    },
     768: {
-      slidesPerView: 5,
+      slidesPerView: 4,
+      spaceBetween: 44,
+    },
+    800: {
+      slidesPerView: 3,
       spaceBetween: 44,
     },
     1200: {
