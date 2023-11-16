@@ -34,19 +34,19 @@ const chekTab = (item, index) => {
 tabItems.forEach(chekTab);
 
 /***********search***********/
-const buttonSearch = document.querySelector(".button-search");
-const menuSearch = document.querySelector(".search__menu");
+// const buttonSearch = document.querySelector(".button-search");
+// const menuSearch = document.querySelector(".search__menu");
 
-buttonSearch.addEventListener("click", () => {
-  menuSearch.classList.toggle("active");
-});
+// buttonSearch.addEventListener("click", () => {
+//   menuSearch.classList.toggle("active");
+// });
 
-const resulBtnSearch = document.querySelector(".button-search-menu");
-const resultSearch = document.querySelector(".search__result");
+// const resulBtnSearch = document.querySelector(".button-search-menu");
+// const resultSearch = document.querySelector(".search__result");
 
-resulBtnSearch.addEventListener("click", () => {
-  resultSearch.classList.toggle("active");
-});
+// resulBtnSearch.addEventListener("click", () => {
+//   resultSearch.classList.toggle("active");
+// });
 
 // const resulBtnSearchM = document.querySelector(".button-search-menu-mob");
 // const resultSearchM = document.querySelector(".search__result-mob");
@@ -56,17 +56,26 @@ resulBtnSearch.addEventListener("click", () => {
 // });
 
 /***burger***/
+// const burgerOpen = document.getElementById("burgerOpen");
+// const menuTab = document.querySelector(".mobile-menu");
+// const burgerClose = document.querySelector(".mobile-menu__burger");
+
+// burgerOpen.addEventListener("click", () => {
+//   menuTab.classList.add("active");
+// });
+function handleClick() {
+  menuTab.classList.add("active");
+}
+
 const burgerOpen = document.getElementById("burgerOpen");
 const menuTab = document.querySelector(".mobile-menu");
-const burgerClose = document.querySelector(".mobile-menu__burger");
+const menuDesc = document.querySelector(".navigation__inner");
 
-burgerOpen.addEventListener("click", () => {
-  menuTab.classList.add("active");
-});
+burgerOpen.addEventListener("click", handleClick);
 
-burgerClose.addEventListener("click", () => {
-  menuTab.classList.remove("active");
-});
+// burgerClose.addEventListener("click", () => {
+//   menuTab.classList.remove("active");
+// });
 
 const catButton = document.querySelector(".mobile-menu__catalog");
 const catMenuOpen = document.querySelector(".mobile-menu__catalog-list");
