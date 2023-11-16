@@ -3651,3 +3651,15 @@ p {
   color: #5f6163;
 }
 /*******/
+.sticky-header {
+  position: fixed;
+  top: -100px; /* Скрываем хедер в начале */
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: top 0.3s ease-in-out;
+}
+
+.sticky-header.active {
+  top: 0; /* Показываем хедер после прокрутки 1000px */
+}

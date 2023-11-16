@@ -483,3 +483,9 @@
     display: none;
   }
 }
+.list1 {
+  display: none !important;
+}
+.list1.active {
+  display: flex !important;
+}

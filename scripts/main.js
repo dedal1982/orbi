@@ -9,29 +9,29 @@
 //   menuDrop.classList.remove("active");
 // });
 
-// const tabItems = Array.from(document.querySelectorAll(".catalog-hover"));
-// const formItems = Array.from(
-//   document.querySelectorAll(".catalog__select-item")
-// );
+const tabItems = Array.from(document.querySelectorAll(".catalog-hover"));
+const formItems = Array.from(
+  document.querySelectorAll(".catalog__select-item")
+);
 
-// const clearActiveTabs = (element, className = "active") => {
-//   element.find((item) => item.classList.remove(`${className}`));
-// };
+const clearActiveTabs = (element, className = "active") => {
+  element.find((item) => item.classList.remove(`${className}`));
+};
 
-// const setActiveTabs = (element, index, className = "active") => {
-//   element[index].classList.add(`${className}`);
-// };
+const setActiveTabs = (element, index, className = "active") => {
+  element[index].classList.add(`${className}`);
+};
 
-// const chekTab = (item, index) => {
-//   item.addEventListener("click", () => {
-//     clearActiveTabs(tabItems);
-//     clearActiveTabs(formItems);
+const chekTab = (item, index) => {
+  item.addEventListener("click", () => {
+    clearActiveTabs(tabItems);
+    clearActiveTabs(formItems);
 
-//     setActiveTabs(tabItems, index);
-//     setActiveTabs(formItems, index);
-//   });
-// };
-// tabItems.forEach(chekTab);
+    setActiveTabs(tabItems, index);
+    setActiveTabs(formItems, index);
+  });
+};
+tabItems.forEach(chekTab);
 
 /***********search***********/
 // const buttonSearch = document.querySelector(".button-search");
@@ -72,3 +72,14 @@ catButton.addEventListener("click", () => {
   menuArrow.classList.toggle("active");
   buttonMobMen.classList.toggle("active");
 });
+/******/
+// const header = document.querySelector(".sticky-header");
+
+// window.addEventListener("scroll", function () {
+//   if (window.pageYOffset > 1000) {
+//     header.classList.add("active");
+//   } else {
+//     header.classList.remove("active");
+//   }
+// });
+/****/
