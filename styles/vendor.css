@@ -221,6 +221,7 @@
   border-bottom: 1px solid #e3e4e6;
   padding-bottom: 0;
 }
+
 .trinity__news-subtitle {
   font-weight: 600;
   font-size: 16px;
@@ -345,7 +346,7 @@
   opacity: 0;
   padding-bottom: 20px;
 }
-.trinity__news-item:hover .services__right-link {
+.trinity__news-item:hover a {
   padding-top: 10px;
   padding-bottom: 40px;
   transition: 0.3s ease-in-out;

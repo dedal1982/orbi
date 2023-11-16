@@ -35,6 +35,7 @@
 @media screen and (max-width: 500px) {
   .news-block__wrapper {
     margin-top: 0;
+    margin-bottom: 80px;
   }
 }
 .news-block__inner {
@@ -153,7 +154,8 @@
 }
 @media screen and (max-width: 500px) {
   .news-block__links-item {
-    display: none;
+    padding-top: 15px;
+    margin-top: 20px;
   }
 }
 .news-block__link {
@@ -185,7 +187,7 @@
 }
 @media screen and (max-width: 500px) {
   .news-block__link {
-    width: 14px;
+    font-size: 14px;
     line-height: 18.2px;
   }
   .news-block__link span {
@@ -234,7 +236,10 @@
     }
   }
   .news-block__news {
-    margin-top: 129px;
+    margin-top: 50px;
+  }
+  .news-block__news-list {
+    gap: 20px;
   }
 }
 @media screen and (max-width: 500px) {
