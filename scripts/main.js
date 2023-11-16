@@ -56,23 +56,13 @@ tabItems.forEach(chekTab);
 // });
 
 /***burger***/
-// const burgerOpen = document.getElementById("burgerOpen");
-// const menuTab = document.querySelector(".mobile-menu");
-// const burgerClose = document.querySelector(".mobile-menu__burger");
-
-// burgerOpen.addEventListener("click", () => {
-//   menuTab.classList.add("active");
-// });
-function handleClick() {
-  menuTab.classList.add("active");
-  menuDesc.classList.remove("active");
-}
-
 const burgerOpen = document.getElementById("burgerOpen");
 const menuTab = document.querySelector(".mobile-menu");
-const menuDesc = document.querySelector(".navigation");
+const burgerClose = document.querySelector(".mobile-menu__burger");
 
-burgerOpen.addEventListener("click", handleClick);
+burgerOpen.addEventListener("click", () => {
+  menuTab.classList.add("active");
+});
 
 burgerClose.addEventListener("click", () => {
   menuTab.classList.remove("active");
