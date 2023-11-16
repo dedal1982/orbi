@@ -1494,7 +1494,7 @@ p {
 .we-work__item-6 img {
   bottom: 78px;
 }
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1551px) {
   .we-work__item-6 {
     transform: translateY(0);
     height: 419px;
