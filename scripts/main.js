@@ -34,19 +34,20 @@ const chekTab = (item, index) => {
 tabItems.forEach(chekTab);
 
 /***********search***********/
-// const buttonSearch = document.querySelector(".button-search");
-// const menuSearch = document.querySelector(".search__menu");
+const buttonSearch = document.querySelector(".button-search");
+const menuSearch = document.querySelector(".search__menu");
 
-// buttonSearch.addEventListener("click", () => {
-//   menuSearch.classList.toggle("active");
-//   menuDrop.classList.remove("active");
-//   resultSearch.classList.remove("active");
-// });
+buttonSearch.addEventListener("click", () => {
+  menuSearch.classList.toggle("active");
+  menuDrop.classList.remove("active");
+  resultSearch.classList.remove("active");
+});
 
 // const resulBtnSearch = document.querySelector(".button-search-menu");
 // const resultSearch = document.querySelector(".search__result");
 
 // resulBtnSearch.addEventListener("click", () => {
+//   // console.log(111);
 //   resultSearch.classList.add("active");
 // });
 
@@ -69,7 +70,6 @@ const buttonMobMen = document.querySelector(".mobile-footer__button-hidden");
 
 catButton.addEventListener("click", () => {
   catMenuOpen.classList.toggle("active");
-  menuArrow.classList.toggle("active");
   buttonMobMen.classList.toggle("active");
 });
 /******/
