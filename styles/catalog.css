@@ -503,7 +503,7 @@
 @media screen and (max-width: 1270px) {
   .catalog__filter-wrapper {
     width: 100%;
-
+    display: flex;
     justify-content: center;
   }
   .catalog__filter-inner {
