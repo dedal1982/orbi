@@ -3801,6 +3801,11 @@ p {
   color: #51a8c3 !important;
   transition: 0.3s ease-in-out;
 }
+@media screen and (max-width: 600px) {
+  .news__hiddden {
+    opacity: 1;
+  }
+}
 /****************we-work__new-page*************************/
 .we-work__new-page {
   max-width: 1113.46px;
