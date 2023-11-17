@@ -505,6 +505,14 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
+  }
+  .catalog__filter-inner::before {
+    position: absolute;
+    content: url(../icons/tr.png);
+    width: 40px;
+    height: 20px;
+    bottom: 20px;
   }
   .catalog__filter-inner {
     display: flex;
@@ -609,9 +617,17 @@
   .catalog__popup-box {
     gap: 0;
   }
+  .catalog__filter-inner::before {
+    width: 0;
+    height: 0;
+  }
 }
 @media screen and (max-width: 320px) {
   .catalog__filter-inner {
     max-width: 280px;
   }
+}
+footer {
+  position: relative;
+  z-index: 999;
 }
