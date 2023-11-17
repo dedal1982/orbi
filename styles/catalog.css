@@ -618,8 +618,7 @@
     gap: 0;
   }
   .catalog__filter-inner::before {
-    width: 0;
-    height: 0;
+    content: "";
   }
 }
 @media screen and (max-width: 320px) {
