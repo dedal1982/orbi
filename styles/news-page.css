@@ -63,6 +63,7 @@
 
 .news-page__img img {
   width: 100%;
+  transition: 0.5s ease-in-out;
 }
 .news-page__text {
   color: #a1a4a7;
