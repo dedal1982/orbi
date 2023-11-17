@@ -668,13 +668,14 @@
                   />
                 </form>
               </div>
-              <div class="search__result">
+              <!-- <div class="search__result">
                 <h3 class="menu-list-title">Результаты поиска</h3>
                 <div class="menu-list">
                   <a class="find-title" href="#">hello</a>
                 </div>
-              </div>
+              </div> -->
             </div>
+
             <div class="mobile-menu__list-box">
               <div class="menu-box mobile-menu__menu-box">
                 <h3 class="menu-list-title">Электронно-компонентная база</h3>
@@ -736,7 +737,6 @@
                   <li>
                     <a class="menu-drop-link" href="#">
                       <svg
-                        id="red-fill"
                         width="35"
                         height="35"
                         viewBox="0 0 35 35"
@@ -1029,7 +1029,11 @@
             <div>
               <p class="top-subtitle mobile-menu__catalog">
                 Каталог
-                <img class="" src="./icons/selectarrow.svg" alt="стрелка" />
+                <img
+                  class="mob-arrow"
+                  src="./icons/selectarrow.svg"
+                  alt="стрелка"
+                />
               </p>
 
               <div class="mobile-menu__list-box mobile-menu__catalog-list">
@@ -1093,6 +1097,7 @@
                     <li>
                       <a class="menu-drop-link" href="#">
                         <svg
+                          class="red-fill-mob"
                           width="35"
                           height="35"
                           viewBox="0 0 35 35"
@@ -2268,6 +2273,95 @@
                   </li>
                 </ul>
               </div>
+            </div>
+            <div class="catalog__filter-wrapper">
+              <ul class="catalog__filter-inner">
+                <li>
+                  <div id="popup" class="catalog__popup">
+                    <div class="menu-box catalog__popup-box">
+                      <h3 class="menu-list-title">
+                        Электронно-компонентная база
+                      </h3>
+                      <ul class="menu-list">
+                        <li>
+                          <a class="menu-drop-link" href="#">
+                            Центральные процессоры CPU
+                          </a>
+                        </li>
+                        <li>
+                          <a class="menu-drop-link" href="#">
+                            Серверные платформы и комплектующие
+                          </a>
+                        </li>
+                        <li>
+                          <a class="menu-drop-link svg" href="#">
+                            Графические карты
+                          </a>
+                        </li>
+                        <li>
+                          <a class="menu-drop-link" href="#">
+                            Твердотельная память SSD
+                          </a>
+                        </li>
+                        <li>
+                          <a class="menu-drop-link" href="#">
+                            Жесткие диски HDD
+                          </a>
+                        </li>
+                        <li>
+                          <a class="menu-drop-link" href="#">
+                            Оперативная память RAM
+                          </a>
+                        </li>
+                        <li>
+                          <a class="menu-drop-link" href="#">
+                            Специализированные чипы
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="menu-box catalog__popup-box">
+                      <h3 class="menu-list-title">ИТ-оборудование</h3>
+                      <ul class="menu-list">
+                        <li>
+                          <a class="menu-drop-link" href="#">
+                            Серверное оборудование
+                          </a>
+                        </li>
+                        <li>
+                          <a class="menu-drop-link" href="#">
+                            Системы хранения данных
+                          </a>
+                        </li>
+                        <li>
+                          <a class="menu-drop-link" href="#">
+                            Сетевое оборудование
+                          </a>
+                        </li>
+                        <li>
+                          <a class="menu-drop-link" href="#"> Ноутбуки </a>
+                        </li>
+                        <li>
+                          <a class="menu-drop-link" href="#">
+                            ПК и моноблоки
+                          </a>
+                        </li>
+                        <li>
+                          <a class="menu-drop-link" href="#"
+                            >Источники бесперебойного питания</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a id="openButton" class="catalog__filter" href="#">
+                    <div class="catalog__filter-icon"></div>
+                    Категории</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </section>

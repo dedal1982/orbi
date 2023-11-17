@@ -3648,15 +3648,15 @@ p {
 #video-block video:nth-child(3) {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #video-block video {
     display: none;
   }
-  #video-block video:nth-child(2) {
+  #video-block video:nth-child(3) {
     display: block;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   #video-block video:nth-child(2) {
     display: none;
   }

@@ -99,3 +99,11 @@ btn1.addEventListener("click", () => {
 btn2.addEventListener("click", () => {
   openPopup(list2);
 });
+
+const filterBtn = document.querySelector(".catalog__filter");
+const catalogList = document.querySelector(".catalog__popup");
+
+filterBtn.addEventListener("click", () => {
+  openPopup(catalogList);
+  openPopup(filterBtn);
+});

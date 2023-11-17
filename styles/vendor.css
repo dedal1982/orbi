@@ -374,6 +374,9 @@
     margin-bottom: 0 !important;
     margin-top: 10px;
   }
+  .trinity__navigation-inner {
+    margin: 70px auto 0;
+  }
 }
 .trinity__news-item a {
   margin-bottom: 0;
@@ -385,6 +388,9 @@
 @media screen and (max-width: 1024px) {
   .trinity__news-item a {
     display: none;
+  }
+  .trinity__news-item .trinity__page-link {
+    display: flex;
   }
   .trinity__news-item {
     padding-bottom: 30px;
