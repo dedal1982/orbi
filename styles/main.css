@@ -2753,6 +2753,7 @@ p {
 /*****************main-rel-section************************/
 .main-rel-section {
   top: 193px;
+  z-index: 999;
 }
 @media screen and (max-width: 1024px) {
   .rel-section {
@@ -2822,7 +2823,7 @@ p {
   width: 100%;
   background: rgba(36, 37, 41, 1);
   border-radius: 40px 40px 0 0;
-  z-index: 999;
+  z-index: 900;
 }
 @media screen and (max-width: 767px) {
   .footer {
