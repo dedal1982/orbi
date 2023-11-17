@@ -2276,7 +2276,7 @@ p {
 @media screen and (max-width: 400px) {
   .privileges__right {
     background: #f8f8fb;
-    padding: 29px 20px;
+    padding: 29px 20px 10px 20px;
 
     max-width: 100%;
   }
@@ -2314,8 +2314,11 @@ p {
   }
 }
 .privileges__icon {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
+}
+.privileges__icon img {
+  width: 100%;
 }
 @media screen and (max-width: 400px) {
   .privileges__icon {
