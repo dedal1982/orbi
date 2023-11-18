@@ -96,10 +96,15 @@
     margin-top: 31px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  .news-block__image {
+    height: 190px;
+    margin-top: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
   .news-block__image {
     height: 150px;
-    margin-top: 18px;
   }
 }
 .news-block__text-box {
