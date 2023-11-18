@@ -42,8 +42,10 @@ document.querySelector(".button-search").onclick = function () {
 };
 
 const catalogList = document.querySelector(".catalog__popup");
+const catalogFiltrIcon = document.querySelector(".catalog__filter-icon");
 document.querySelector(".catalog__filter").onclick = function () {
   catalogList.classList.toggle("active");
+  catalogFiltrIcon.classList.toggle("active");
 };
 
 const list1 = document.querySelector(".list1");

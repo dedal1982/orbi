@@ -327,7 +327,7 @@
     top: 12px;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 767px) {
   .registry::before {
     content: url(../icons/ctim.svg);
     width: 12px;
@@ -551,7 +551,7 @@
     background-size: cover;
     background-position: center center;
   }
-  .catalog__filter.active .catalog__filter-icon {
+  .catalog__filter-icon.active {
     background: url(../icons/filtrx.png);
   }
   @media screen and (max-width: 768px) {
@@ -560,29 +560,27 @@
       height: 15px;
       background-size: contain;
     }
-    .catalog__filter.active .catalog__filter-icon {
-      width: 15px;
-      height: 15px;
-      background-size: contain;
+    .catalog__filter-icon.active {
+      background: url(../icons/film.png);
     }
   }
-  .catalog__popup {
-    display: none;
-  }
-  .catalog__popup.active {
-    display: flex;
-    width: 100%;
-    background: #f8f8fb;
-    border-radius: 20px;
-    padding: 60px 60px;
-    box-sizing: border-box;
-    justify-content: space-between;
-    gap: 58px;
-  }
-  .catalog__popup-list {
-    display: flex;
-    flex-direction: column;
-  }
+}
+.catalog__popup {
+  display: none;
+}
+.catalog__popup.active {
+  display: flex;
+  width: 100%;
+  background: #f8f8fb;
+  border-radius: 20px;
+  padding: 60px 60px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  gap: 58px;
+}
+.catalog__popup-list {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
@@ -624,6 +622,15 @@
 @media screen and (max-width: 320px) {
   .catalog__filter-inner {
     max-width: 280px;
+  }
+  .catalog__filter {
+    width: 280px;
+    left: 20px;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+  }
+  .catalog__filter-inner {
+    background: #f8f8fb;
   }
 }
 footer {
