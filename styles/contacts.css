@@ -250,27 +250,27 @@
 .contacts__down {
   border-radius: 20px;
 }
-.contacts__down marquee {
+.contact_slider {
   width: 50%;
   border-radius: inherit;
 }
 @media screen and (max-width: 1280px) {
-  .contacts__down marquee {
+  .contact_slider {
     height: 440px;
   }
 }
 @media screen and (max-width: 980px) {
-  .contacts__down marquee {
+  .contact_slider {
     height: 380px;
   }
 }
 @media screen and (max-width: 767px) {
-  .contacts__down marquee {
+  .contact_slider {
     width: 100%;
   }
 }
 @media screen and (max-width: 500px) {
-  .contacts__down marquee {
+  .contact_slider {
     height: 280px;
   }
 }
