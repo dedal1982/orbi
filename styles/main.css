@@ -2273,7 +2273,7 @@ p {
     height: fit-content;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .privileges__right {
     background: #f8f8fb;
     padding: 29px 20px 10px 20px;
