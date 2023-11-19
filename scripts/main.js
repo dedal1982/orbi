@@ -49,11 +49,15 @@ document.querySelector(".catalog__filter").onclick = function () {
 };
 
 const list1 = document.querySelector(".list1");
+const listRow = document.querySelector(".catalog-hover");
 document.getElementById("tab1").onclick = function () {
   list1.classList.toggle("active");
+  listRow.classList.toggle("active");
 };
 
 const list2 = document.querySelector(".list2");
+const listRow2 = document.querySelector(".catalog-hover2");
 document.getElementById("tab2").onclick = function () {
   list2.classList.toggle("active");
+  listRow2.classList.toggle("active");
 };
