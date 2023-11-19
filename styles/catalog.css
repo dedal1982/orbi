@@ -507,12 +507,20 @@
     justify-content: center;
     position: relative;
   }
-  .catalog__filter-inner::before {
+  /* .catalog__filter-inner::before {
     position: absolute;
     content: url(../icons/tr.png);
     width: 40px;
     height: 20px;
     bottom: 20px;
+  } */
+  .catalog__popup::before {
+    position: absolute;
+    content: url(../icons/tr.png);
+    width: 40px;
+    height: 20px;
+    bottom: 75px;
+    left: calc((100% - 40px) / 2);
   }
   .catalog__filter-inner {
     display: flex;
@@ -522,7 +530,7 @@
     position: fixed;
     bottom: 80px;
     max-width: 924px;
-    width: 100%;
+    margin: 0 20px;
   }
   .catalog__filter {
     display: flex;
@@ -540,7 +548,7 @@
     padding-left: 30px;
     padding-right: 30px;
     box-sizing: border-box;
-    position: fixed;
+
     left: calc((100% - 213px) / 2);
   }
   .catalog__filter-icon {
@@ -600,7 +608,12 @@
     color: #191a1b;
   }
   .catalog__filter-inner {
-    gap: 15px;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .catalog__popup::before {
+    bottom: 54px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -615,8 +628,19 @@
   .catalog__popup-box {
     gap: 0;
   }
-  .catalog__filter-inner::before {
-    content: "";
+}
+@media screen and (max-width: 500px) {
+  .catalog__popup::before {
+    display: none !important;
+  }
+  .catalog__filter-inner {
+    background: #f8f8fb;
+    border-radius: 20px;
+    bottom: 30px;
+    gap: 15px;
+  }
+  .catalog__popup::before {
+    display: none !important;
   }
 }
 @media screen and (max-width: 320px) {
