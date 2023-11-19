@@ -598,7 +598,11 @@
   display: flex;
   flex-direction: column;
 }
-
+@media screen and (max-width: 834px) {
+  .catalog__filter-inner {
+    bottom: 30px;
+  }
+}
 @media screen and (max-width: 768px) {
   .catalog__filter {
     width: 162px;
@@ -619,6 +623,7 @@
     gap: 30px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .catalog__popup::before {
     bottom: 54px;
@@ -644,7 +649,7 @@
   .catalog__filter-inner {
     background: #f8f8fb;
     border-radius: 20px;
-    bottom: 30px;
+
     gap: 15px;
   }
   .catalog__popup::before {
