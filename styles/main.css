@@ -3409,7 +3409,7 @@ p {
   display: flex;
   gap: 10px;
   color: #a1a4a7;
-  text-transform: uppercase;
+
   transition: all 0.3s ease-in-out;
 }
 .nav-list-item.active {
