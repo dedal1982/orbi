@@ -37,7 +37,7 @@
 /******/
 const contact_slider = new Swiper(".contact_slider", {
   slidesPerView: 1,
-  spaceBetween: 5,
+  spaceBetween: 10,
   speed: 2500,
   loop: true,
   allowTouchMove: false,
