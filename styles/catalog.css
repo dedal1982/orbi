@@ -478,15 +478,6 @@
   }
 }
 
-/* @media screen and (max-width: 1024px) {
-  .catalog__footer__wrapper {
-    margin-top: 160px;
-  }
-  .catalog__footer__grid {
-    padding-top: 88px;
-    row-gap: 78px;
-  }
-} */
 /*****************catalog__hidden****************/
 .catalog__hidden {
   display: none;
@@ -515,13 +506,7 @@
     justify-content: center;
     position: relative;
   }
-  /* .catalog__filter-inner::before {
-    position: absolute;
-    content: url(../icons/tr.png);
-    width: 40px;
-    height: 20px;
-    bottom: 20px;
-  } */
+
   .catalog__popup::before {
     position: absolute;
     content: url(../icons/tr.png);
