@@ -63,7 +63,11 @@
 
   transition: 0.5s ease-in-out;
 }
+.news-page__item:hover .news-page-link svg {
+  transform: rotate(45deg);
 
+  transition: 0.5s ease-in-out;
+}
 .news-page__img {
   width: 100%;
   border-radius: 20px;
