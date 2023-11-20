@@ -55,6 +55,11 @@
   justify-content: space-between;
   gap: 20px;
 }
+@media screen and (max-width: 833px) {
+  .contacts__top {
+    gap: 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .contacts__top {
     flex-direction: column;
@@ -133,7 +138,7 @@
     line-height: 43.75px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 890px) {
   .contacts-subtitle {
     font-size: 25px;
     line-height: 31.25px;
@@ -286,7 +291,11 @@
     padding: 50px 50px;
   }
 }
-
+@media screen and (max-width: 835px) {
+  .contacts__down-item {
+    padding: 50px 30px;
+  }
+}
 @media screen and (max-width: 500px) {
   .contacts__down-item {
     padding: 19px 20px;
