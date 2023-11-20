@@ -150,7 +150,7 @@
 }
 @media screen and (max-width: 1024px) {
   .catalog__inner-letters {
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     column-gap: 53px;
     margin-right: 0;
