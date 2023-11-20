@@ -410,3 +410,9 @@
     padding-bottom: 20px;
   }
 }
+.trinity__link:hover {
+  color: #51a8c3;
+}
+.trinity__link:hover .services__link-svg {
+  fill: #51a8c3;
+}
