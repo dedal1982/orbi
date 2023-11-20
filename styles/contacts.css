@@ -131,6 +131,10 @@
   font-size: 36px;
   line-height: 50px;
   color: #191a1b;
+  transition: all 0.3s ease-in-out;
+}
+.contact-hover:hover h2 {
+  color: #51a8c3;
 }
 @media screen and (max-width: 1425px) {
   .contacts-subtitle {
