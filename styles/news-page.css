@@ -54,6 +54,16 @@
   transform: scale(1.1);
   transition: 0.5s ease-in-out;
 }
+.news-page__item:hover .news-page-link {
+  color: #51a8c3;
+  transition: 0.5s ease-in-out;
+}
+.news-page__item:hover .news-page-link svg {
+  fill: #51a8c3;
+
+  transition: 0.5s ease-in-out;
+}
+
 .news-page__img {
   width: 100%;
   border-radius: 20px;
