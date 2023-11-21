@@ -109,6 +109,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 @media screen and (max-width: 833px) {
   .catalog__inner-text {
     flex-direction: column;
@@ -120,6 +121,18 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.catalog__inner-title-hover{
+  cursor: pointer;
+}
+.catalog__inner-title-hover:hover{
+  color: #ed1c3b;
+  transition: 0.3s ease-in-out;
+
+}
+.catalog__inner-title:hover svg path{
+  fill: #ed1c3b;
+  transition: 0.3s ease-in-out;
 }
 .catalog__inner-letter {
   font-weight: 600;
